@@ -188,3 +188,36 @@ if ( class_exists( 'WooCommerce' ) ) {
 /**
  * Woocommerce hooks customization
  */
+
+	// Open image wrapper
+	add_action( 'woocommerce_before_shop_loop_item', 'misfit_shop_item_image_wrapper_open', 15 );
+	
+	function misfit_shop_item_image_wrapper_open() {
+	echo '<div class="card--woo__image">';
+	}
+
+	// Close image wrapper
+	add_action( 'woocommerce_before_shop_loop_item_title', 'misfit_shop_item_image_wrapper_close', 15 );
+	
+	function misfit_shop_item_image_wrapper_close() {
+	echo '</div>';
+	}
+
+
+
+	// Open shop card overlay wrapper
+	add_action( 'woocommerce_before_shop_loop_item_title', 'misfit_shop_item_overlay_wrapper_open', 20 );
+	
+	function misfit_shop_item_overlay_wrapper_open() {
+	echo '<div class="card--woo__overlay">';
+	}
+
+	// Close shop card overlay wrapper
+	add_action( 'woocommerce_after_shop_loop_item', 'misfit_shop_item_overlay_wrapper_close', 5 );
+ 
+	function misfit_shop_item_overlay_wrapper_close() {
+	echo '</div>';
+	}
+
+	// Remove add to cart button
+	remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );

@@ -9,7 +9,7 @@
     padding: 0
     margin: 0
     grid-template-columns: repeat( auto-fill, minmax(270px, 1fr) )
-    grid-row-gap: 2rem
+    grid-row-gap: 4rem
     margin-bottom: 3rem
 
 .card
@@ -101,48 +101,69 @@
     &__content
       padding: 1.5rem 1rem
       color: $color__text
-      // .btn
-      //   display: inline-block
     
 /* Woo product card */
 .card
   &--woo
-    a.woocommerce-loop-product__link
-      display: block
-      width: 100%
-      position: relative
+    padding: 0
+    box-shadow: none
+    overflow: hidden
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: 1fr
+    a
+      color: $color__accent
+    &:hover
+      .card--woo__overlay
+        transform: translateY(0%)
+    .woocommerce-loop-product__link
+      grid-column: 1 / -1
+      grid-row: 1 / -1
       text-decoration: none
+    &__image
+      padding: 0
       img
-        margin: 0
-        padding: 0
         display: block
+        margin: 0
         width: 100%
-        height: 100%
-        object-fit: cover
-        object-position: center
-      .onsale
-        position: absolute
-        background: $color__accent--secondary
-        width: 100%
-        padding: 0.3rem
-        color: white
-        text-transform: uppercase
-        text-decoration: none
-        text-align: center
+    &__overlay
+      grid-column: 1 / -1
+      grid-row: 1 / -1
+      background: rgba(white, 0.95)
+      position: relative
+      display: grid
+      justify-items: center
+      align-items: center
+      height: 70%
+      margin-top: auto
+      transform: translateY(100%)
+      transition: all ease-in-out 300ms
+      text-align: center
+
       .woocommerce-loop-product__title
-        color: black
-        transition: all ease-in-out 300ms
-        padding-left: 1rem
-        border-left: 3px solid $color__accent
-        &:hover
-          color: $color__accent
-      .price
         color: $color__accent
-        font-size: 1.2rem
+        text-decoration: none
+        font-size: 1rem
+        text-transform: uppercase
         font-weight: 600
+        letter-spacing: 2px
+      
+      .price
+        font-size: 1.2rem
         del
           color: $color__text--light
-          margin-right: 0.8rem
-          font-size: 1rem
         ins
-          background: none
+          background-color: none
+          .amount
+            font-size: 1.4rem
+            // color: $color__text--dark
+
+.onsale
+  position: absolute
+  background: $color__accent--secondary
+  width: 50%
+  padding: 0.3rem
+  color: white
+  text-transform: uppercase
+  text-decoration: none
+  text-align: center
