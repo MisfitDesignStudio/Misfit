@@ -1,0 +1,92 @@
+.card-grid
+  &--portfolio
+    grid-template-columns: repeat( auto-fit, minmax(220px, 1fr) )
+    grid-auto-rows: 200px
+    margin: 4rem 0 
+    grid-gap: 0
+
+.portfolio-item
+  overflow: hidden
+  display: grid
+  grid-template-columns: 1fr
+  grid-template-rows: 1fr
+  &__image
+    grid-column: 1 / -1
+    grid-row: 1 / -1
+    width: 100%
+    height: 100%
+    object-fit: cover
+  &__overlay
+    grid-column: 1 / -1
+    grid-row: 1 / -1
+    background: rgba($color__accent, 0.3)
+    display: flex
+    justify-content: center
+    align-items: center
+    transform: translateY(100%)
+    transition: all ease-in-out 300ms
+  &:hover
+    .portfolio-item__overlay
+      transform: translateY(0)
+
+  
+// .portfolio-item
+//   display: block
+//   height: 0
+//   overflow: hidden
+//   padding-top: 100%
+//   position: relative
+//   &:hover
+//     .portfolio-item__content
+//       &__image
+//         img
+//           width: 100%
+//           height: 100%
+//           opacity: 1
+//           transform: scale(1)
+//       &__title
+//         transform: scale(1)
+//         opacity: 1
+
+
+//   &__content
+//     position: absolute
+//     top: 0
+//     left: 0
+//     width: 100%
+//     height: 100%
+
+//     &__image
+//       width: 100%
+//       height: 100%
+//       background: white
+//       img
+//         display: block
+//         width: 100%
+//         height: 100%
+//         transform: scale(1.2)
+//         object-fit: cover
+//         object-position: center
+//         opacity: 0.8
+//         transition: all 300ms ease-in-out
+          
+//     &__title
+//       position: absolute
+//       margin: 0      
+//       top: 0
+//       left: 0
+//       width: 100%
+//       height: 100%
+//       display: flex
+//       justify-content: center
+//       align-items: center
+//       transform: scale(0.5)
+//       opacity: 0
+//       transition: all 300ms ease-in-out 100ms
+//       h3
+//         padding: 2rem
+//         background: rgba(white, 0.9)
+//         color: $color__accent
+//         font-weight: 600
+//         text-transform: uppercase
+//         text-decoration: none

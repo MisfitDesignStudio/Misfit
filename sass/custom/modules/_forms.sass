@@ -1,0 +1,70 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"]
+  display: inline-block
+  margin: 0
+  text-transform: uppercase
+  font-weight: 600
+  letter-spacing: 1px
+  transition: all ease-in-out 200ms
+  border: 2px solid
+  text-decoration: none
+  text-align: center
+  border-radius: 0
+  font-size: 0.6rem
+  padding: 1.2em 1.8em 1em
+  background: $color__accent
+  border-color: $color__accent
+  color: white
+  cursor: pointer
+  &:hover
+    background: white
+    border-color: $color__accent
+    color: $color__accent
+  @include tablet-m
+    padding: 1em 1.6em
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea
+  color: $color__text
+  border: none
+  // border-bottom: 2px solid $color__accent
+  border-radius: 0
+  padding: 0.3rem
+  font-size: 0.8rem
+  transition: all ease-in-out 200ms
+  box-shadow: inset 0px -2px 0px 0px $color__accent
+  &:focus
+    outline: none
+    box-shadow: inset 0px -1px 0px 0px $color__accent
+textarea
+	width: 100%
+
+
+
+
+
+
+.woocommerce-product-search
+  display: flex
+  width: 100%
+  .search-field
+    flex: 1
+    border-right: none
+
+

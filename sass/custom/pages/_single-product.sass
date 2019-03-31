@@ -1,0 +1,180 @@
+.misfit-single-product
+  position: relative
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-gap: 1rem
+  margin-top: 2rem
+  @include tablet-s
+    display: block
+  .onsale
+    position: absolute
+    background: $color__accent--secondary
+    width: 10%
+    padding: 0.3rem
+    color: white
+    text-transform: uppercase
+    text-decoration: none
+    text-align: center
+    right: 10px
+    top: 10px
+    z-index: 10
+    @include tablet-s
+      width: 100%
+      top: 0
+      right: 0
+  .woocommerce-product-gallery
+    position: relative
+    width: 100%
+    max-width: 100%
+    .woocommerce-product-gallery__trigger
+      position: absolute
+      right: 10px
+      top: 10px
+      z-index: 10
+      @include tablet-s
+        top: 45px
+        right: 15px
+    .woocommerce-product-gallery__wrapper
+      width: 100%
+      @include tablet-s
+        margin-top: 2rem
+      .woocommerce-product-gallery__image
+        width: 100%
+        @include tablet-s
+          height: 300px
+        a
+          display: block
+          width: 100%
+          @include tablet-s
+            height: 300px
+          img
+            display: block
+            width: 100%
+            height: 100%
+            object-fit: cover
+            object-position: center
+    .flex-viewport
+      width: 100%
+      .woocommerce-product-gallery__wrapper
+        width: 100%
+        margin: 0
+        @include tablet-s
+          margin-top: 2rem
+    ol
+      list-style: none
+      margin: 0
+      padding: 0
+      display: grid
+      grid-template-columns: repeat(auto-fill, 100px)
+      grid-gap: 2px
+      padding-top: 1rem
+      margin-top: 1rem
+      border-top: 1px solid $color__accent
+      width: 100%
+      li
+        width: 100px
+        max-width: 100px
+        height: 100px
+        max-height: 100px
+        img
+          display: block
+          width: 100%
+          height: 100%
+          object-fit: cover
+          object-position: center
+
+
+  .summary
+    .price
+      color: $color__accent
+      font-size: 1.2rem
+      font-weight: 600
+      del
+        color: $color__text--light
+        margin-right: 0.8rem
+        font-size: 1rem
+      ins
+        background: none
+    .cart
+      display: flex
+      margin-bottom: 1rem
+      div
+        input
+          height: 100%
+    .product_meta
+      .sku_wrapper
+        display: none
+      .posted_in
+        font-size: 0.8rem
+        text-transform: uppercase
+        color: $color__text--light
+        a
+          color: $color__text--light
+          text-decoration: none
+          font-weight: 600
+          transition: all ease-in-out 200ms
+          &:hover
+            color: $color__accent
+    .variations_form
+      display: grid
+      .variations
+        width: 100%
+        tbody
+          display: block
+          color: $color__text--light
+          font-size: 0.9rem
+          tr
+            display: grid
+            grid-template-columns: 1fr 4fr
+            align-items: center
+            td
+              select
+                color: $color__text--light
+                font-size: 0.9rem
+                padding: 0.5rem
+      .single_variation_wrap
+        .woocommerce-variation-add-to-cart
+          display: flex
+          margin-bottom: 1rem
+          div
+            input
+              height: 100%
+
+
+
+  .woocommerce-tabs
+    grid-column: span 2
+    .tabs
+      display: grid
+      grid-template-columns: repeat(3, 1fr)
+      @include tablet-s
+        display: flex
+        flex-direction: column
+      li
+        border-right: 1px solid $color__accent
+        @include tablet-s
+         border-right: none
+         border-bottom: 1px solid $color__accent
+        &:last-child
+          border-right: none
+        a
+          text-align: center
+          color: $color__text
+          text-transform: uppercase
+          text-decoration: none
+          font-size: 0.8rem
+          transition: all ease-in-out 200ms
+          &:hover
+            box-shadow: inset 0px 3px 0px 0px $color__accent
+            @include tablet-s
+              box-shadow: inset 3px 0px 0px 0px $color__accent
+        &.active
+          box-shadow: inset 0px 3px 0px 0px $color__accent
+          @include tablet-s
+            box-shadow: inset 3px 0px 0px 0px $color__accent
+
+  .related
+    grid-column: span 2
+    .onsale
+      right: 0
+      top: 0

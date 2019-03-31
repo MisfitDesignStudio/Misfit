@@ -1,0 +1,55 @@
+.woocommerce-form-coupon-toggle
+  .woocommerce-info
+    padding: 1rem
+    background: lighten($color__accent, 5)
+    font-size: 0.9rem
+    color: white
+    text-transform: uppercase
+    text-align: left
+    a
+      color: white
+      font-weight: 600
+      text-decoration: none
+      margin-left: 1rem
+      &:hover
+        text-decoration: underline
+
+form.checkout
+  .col2-set
+    padding: 0.5rem
+    overflow: hidden
+    box-shadow: 0 0 2px rgba(black, 0.2)
+    position: relative
+    max-width: 100%
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-gap: 2rem
+    @include tablet-s
+      display: block
+    .col-1
+      .woocommerce-billing-fields
+        .woocommerce-billing-fields__field-wrapper
+          display: flex
+          flex-direction: column
+          p
+            padding-bottom: 0.7rem
+            border-bottom: 1px solid $color__background--light
+            margin-bottom: 0.7rem
+            width: 100%
+            label
+              margin-right: 1rem
+
+.woocommerce-notice
+  padding: 1rem
+  background: lighten($color__accent, 5)
+  font-size: 0.9rem
+  color: white
+  text-transform: uppercase
+  text-align: left
+  a
+    color: white
+    font-weight: 600
+    text-decoration: none
+    margin-right: 1rem
+    &:hover
+      text-decoration: underline          

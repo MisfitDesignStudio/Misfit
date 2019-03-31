@@ -1,0 +1,60 @@
+.comments-area
+  .comments-title
+    font-size: 1.3rem
+    color: $color__text--light
+  ol.comment-list,
+  ol.children
+    margin: 0
+    padding: 0
+  ol.children
+    margin-left: 1rem
+  li
+    border-left: 2px solid rgba($color__accent, 0.5)
+    margin-bottom: 1rem    
+    article
+      margin: 1rem 0
+      background: $color__background--light
+      padding: 1rem
+      footer.comment-meta
+        font-size: 0.8rem
+        .comment-author
+          display: flex
+          align-items: baseline
+          .fn
+            margin-left: 0.8rem
+            margin-right: 0.5rem
+        .comment-metadata
+          a
+            color: $color__accent
+            font-size: 0.7rem
+            text-decoration: none
+            transition: all ease-in-out 200ms
+            &:hover
+              text-decoration: underline
+          .edit-link
+            font-weight: 600
+      .comment-content
+        font-size: 0.8rem
+      .reply
+        a
+          color: $color__accent
+          font-size: 0.8rem
+          text-decoration: none
+          &:hover
+            text-decoration: underline
+
+.comment-respond
+  margin-top: 2rem
+  border-top: 1px solid $color__background--light
+
+.comment-form
+  .logged-in-as
+    a
+      text-transform: uppercase
+      font-size: 0.8rem
+  .comment-form-comment
+    font-size: 0.9rem
+    textarea
+      padding: 1rem
+      font-size: 0.8rem
+      line-height: 1.6

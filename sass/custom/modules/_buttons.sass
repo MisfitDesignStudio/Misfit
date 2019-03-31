@@ -1,0 +1,81 @@
+.btn
+  display: inline-block
+  margin: 0
+  text-transform: uppercase
+  font-weight: 600
+  letter-spacing: 1px
+  transition: all ease-in-out 200ms
+  border: 2px solid
+  text-decoration: none
+  text-align: center
+
+  &--small
+    font-size: 0.6rem
+    padding: 1.2em 1.8em 1em
+
+  &--medium
+    font-size: 0.6rem
+    padding: 1.4em 2em 1.2em
+    @include tablet-m
+      padding: 1em 1.6em
+  
+  &--large
+
+  &--primary
+    background: $color__accent
+    border-color: $color__accent
+    color: white
+    &:hover
+      background: white
+      color: $color__accent
+  &--secondary
+    border-color: $color__accent
+    color: $color__accent
+    background: white
+    &:hover
+      background: $color__accent
+      color: white
+
+  &--back
+    margin-top: 3rem
+
+  &--card
+    position: absolute
+    z-index: 99
+    width: 40px
+    height: 40px
+    display: flex
+    flex: 1
+    justify-content: center
+    border-radius: 50%
+    top: 21px
+    right: 20px
+    font-size: 1.1rem
+    i
+      align-self: center
+
+  &--add-to-cart
+    margin-top: 1rem
+
+/* Mini cart buttons */
+.button,
+.added_to_cart
+  display: inline-block
+  margin: 0
+  text-transform: uppercase
+  font-weight: 600
+  letter-spacing: 1px
+  transition: all ease-in-out 200ms
+  border: 2px solid
+  text-decoration: none
+  text-align: center
+  font-size: 0.6rem
+  padding: 1.2em 1.8em 1em
+  background: $color__accent
+  border-color: $color__accent
+  color: white
+  &:hover
+    background: white
+    color: $color__accent
+  &:first-child
+    margin-right: 1rem

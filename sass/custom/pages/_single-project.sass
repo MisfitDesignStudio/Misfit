@@ -1,0 +1,49 @@
+.project-page
+  margin: 2rem 0
+
+  &__meta
+    background: $color__background--light
+    padding: 1rem
+    &__client
+      margin: 0
+      color: lighten($color__text, 10)
+      font-weight: 600
+    &__category-list
+      margin: 0
+      padding: 0
+      list-style: none
+      display: flex
+      color: $color__accent
+      text-transform: uppercase
+      font-size: 0.6rem
+      font-weight: 600
+      margin-top: 0.5rem
+      li
+        margin-right: 1rem
+        &::after
+          content: '|'
+          margin-left: 1rem
+        &:last-child
+          &::after
+            display: none
+
+/* Related Posts Section */
+
+.related-posts-title
+  font-weight: 400
+  color: $color__text
+  &::before
+    content: ''
+    display: block  
+    width: 100%
+    height: 1px
+    background-color: $color__accent
+    margin: 3rem 0 2rem
+.related-posts
+  list-style: none
+  margin: 2rem 0
+  padding-inline-start: 0
+  display: grid
+  grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) )
+  grid-gap: 1rem
+      

@@ -1,0 +1,60 @@
+form.woocommerce-cart-form
+  padding: 0.5rem
+  overflow: hidden
+  box-shadow: 0 0 2px rgba(black, 0.2)
+  position: relative
+  max-width: 100%
+  table
+    margin: 0
+    padding: 0
+    border-collapse:separate
+    border-spacing: 0 1em
+    tbody
+      tr
+        border-bottom: 1px solid $color__background--light
+        .product
+          &-remove
+            width: 20px
+            height: 20px
+            a
+              display: block
+              background: $color__accent--secondary
+              text-align: center
+              line-height: 20px
+              color: white
+              font-weight: 600
+              text-decoration: none
+          &-thumbnail
+            display: block
+            width: 100px
+            height: 100px
+            a
+              display: block
+              width: 100px
+              height: 100px
+              img
+                display: block
+                width: 100%
+                height: 100%
+                object-fit: cover
+                object-position: center
+          &-name
+            a
+              color: $color__text--light
+              font-weight: 600
+              font-size: 0.9rem
+              text-transform: uppercase
+              text-decoration: none
+              transition: all ease-in-out 200ms
+              &:hover
+                color: $color__accent
+          &-price
+            color: $color__text--light
+            font-weight: 600
+          &-subtotal
+            color: $color__accent
+            font-weight: 600
+      .actions
+        .coupon
+          .button
+            margin: 0.5rem 0
