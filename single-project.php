@@ -11,8 +11,9 @@
 get_header();
 ?>
 
-<div id="primary">
-  <div class="container">
+<div class="container v-padding content-sidebar">
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main">
 
     <section class="project-page">
 
@@ -32,71 +33,18 @@ get_header();
         </ul>
         </div>
 
-      <?php
-
-        the_content(); ?>
+        <?php the_content(); ?>
 
         <a href="<?php echo get_home_url(); ?>/portfolio" class="btn btn--medium btn--secondary btn--back">See all projects</a>
 
-
-        <?php
-        // RELATED PROJECTS
-        //get the taxonomy terms of custom post type
-        $customTaxonomyTerms = wp_get_object_terms( $post->ID, 'category', array('fields' => 'ids') );
-
-        //query arguments
-        $args = array(
-            'post_type' => 'project',
-            'post_status' => 'publish',
-            'posts_per_page' => 3,
-            'orderby' => 'rand',
-            'tax_query' => array(
-                array(
-                    'taxonomy' => 'category',
-                    'field' => 'id',
-                    'terms' => $customTaxonomyTerms
-                )
-            ),
-            'post__not_in' => array ($post->ID),
-        );
-
-        //the query
-        $relatedPosts = new WP_Query( $args );
-
-        //loop through query
-        if($relatedPosts->have_posts()){
-            echo '<h2 class="related-posts-title">Related projects</h2> <div class="related-posts">';
-            while($relatedPosts->have_posts()){ 
-              $relatedPosts->the_post(); ?>
-
-            <a href="<?php the_permalink(); ?>" class="portfolio-item">
-              <div class="portfolio-item__content">
-                <div class="portfolio-item__content__image">
-                  <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
-                </div>
-                <div class="portfolio-item__content__title">
-                  <h3><?php the_title(); ?></h3>
-                </div>
-              </div>
-            </a>
-
-        <?php }
-            echo '</div>';
-        } else {
-            //no posts found
-        }
-
-        //restore original post data
-        wp_reset_postdata();
-
-
-      endwhile;
-      ?>
+      <?php endwhile; ?>
 
     </section>
 
-  </div>
-</div>
+		</main><!-- #main -->
+	</div><!-- #primary -->
 
 <?php
-get_footer();
+get_sidebar(); ?>
+</div>
+<?php get_footer();
