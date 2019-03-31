@@ -1,25 +1,22 @@
-jQuery(document).ready(function() {
-   // Toggle menu button aria hidden atribute value
-  jQuery.fn.toggleAttrVal = function(attr, val1, val2) {
-    var test = jQuery(this).attr(attr);
-    if ( test === val1) {
-      jQuery(this).attr(attr, val2);
-      return this;
-    }
-    if ( test === val2) {
-      jQuery(this).attr(attr, val1);
-      return this;
-    }
-    // default to val1 if neither
-    jQuery(this).attr(attr, val1);
-    return this;
-  };
+const navSlide = () => {
+  const burger = document.querySelector('.burger');
+  const navLinks = document.querySelector('.nav-links');
+  const navLinksItems = document.querySelectorAll('.nav-links li');
 
- 
-	jQuery(".menu-toggle").on("click", function(){
-    
-    jQuery('.navigation-bar__links').toggleAttrVal('aria-expanded', "true", "false");
-    
-	});
+  burger.addEventListener('click', ()=>{
+    // Toggle nav slide
+    navLinks.classList.toggle('nav-active');
+    // Toggle nav list items opacity/slide
+    navLinksItems.forEach((link, index)=>{
+      if(link.style.animation) {
+        link.style.animation = ''
+      } else {
+        link.style.animation = `navLinkFade 300ms ease forwards ${index / 7 + .35}s`
+      }
+    });
+    // Animate burger
+    burger.classList.toggle('burger-toggle');
+  });
+}
 
-});
+navSlide();

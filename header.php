@@ -14,7 +14,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
@@ -24,41 +24,36 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'misfit' ); ?></a>
 
-	<div class="navigation">
-
-		<div class="social-bar">
-			<a href="https://www.facebook.com/misfitdsgn" class="social-bar__link"><i class="fab fa-facebook"></i></a>
-			<a href="https://www.instagram.com/misfit.design" class="social-bar__link"><i class="fab fa-instagram"></i></a>
-			<a href="https://dribbble.com/misfit_design" class="social-bar__link"><i class="fab fa-dribbble"></i></a>
-		</div>
-
-		<div class="navigation-bar">
-			<div class="flex">
-
-				<div class="navigation-bar__logo">
-					<a href="<?php echo get_home_url(); ?>" class="navigation-bar__logo__link">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/misfit-logo.svg" alt="Misfit Logo">
-					</a>
-				</div>
-
-				<!-- Menu toggle -->
-				<div class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-					<i class="fas fa-bars"></i>
-				</div>
-
-				<!-- Desktop navigation-bar -->
-				<div class="navigation-bar__links" aria-expanded="false">
-					<?php
-					wp_nav_menu( array(
-						'theme_location' => 'Main Menu',
-						'menu_id'        => 'primary-menu'
-					) );
-					?>				
-				</div>
-
-			</div>
-		</div>
-
+	<div class="social-bar">
+		<a href="https://www.facebook.com/misfitdsgn" class="social-bar__link"><i class="fab fa-facebook"></i></a>
+		<a href="https://www.instagram.com/misfit.design" class="social-bar__link"><i class="fab fa-instagram"></i></a>
+		<a href="https://dribbble.com/misfit_design" class="social-bar__link"><i class="fab fa-dribbble"></i></a>
 	</div>
+
+
+	<nav class="nav">
+		<a href="<?php echo get_home_url(); ?>" class="nav-logo">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/nav-logo-white.svg" alt="">
+		</a>
+
+		<?php
+			$navMenuArgs = array(
+				'theme_location'  => 'Primary Menu',
+				'menu'            => 'Main Menu',
+				'menu_class'      => 'nav-links',
+				'container'       => ''
+			);
+			wp_nav_menu($navMenuArgs);
+		?>
+
+		<div class="burger">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
+	</nav>
+
+
+
 
 	<div id="content" class="site-content">
