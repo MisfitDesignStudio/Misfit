@@ -230,3 +230,13 @@ if ( class_exists( 'WooCommerce' ) ) {
 
 	// Remove add to cart button
 	remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
+
+
+
+
+function is_portfolio () {
+	return ( is_page() || is_archive() || is_author() || is_category() || is_home() || is_single() || is_tag()) && 'post' == get_post_type('project');
+}
+function is_blog () {
+	return ( is_archive() || is_author() || is_category() || is_home() || is_single() || is_tag()) && 'post' == get_post_type();
+}

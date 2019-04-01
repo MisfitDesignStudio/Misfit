@@ -7,11 +7,15 @@
  * @package MisfitDesign
  */
 
-if ( ! is_active_sidebar( 'sidebar-blog' ) ) {
-	return;
-}
+if ( is_portfolio() OR is_page('portfolio')) { ?>
+	<aside id="secondary" class="widget-area">
+		<?php dynamic_sidebar( 'sidebar-portfolio' ); ?>
+	</aside><!-- #secondary -->
+
+<?php } elseif ( is_blog() ) { ?>
+	<aside id="secondary" class="widget-area">
+		<?php dynamic_sidebar( 'sidebar-blog' ); ?>
+	</aside><!-- #secondary -->
+<?php }
 ?>
 
-<aside id="secondary" class="widget-area">
-	<?php dynamic_sidebar( 'sidebar-blog' ); ?>
-</aside><!-- #secondary -->

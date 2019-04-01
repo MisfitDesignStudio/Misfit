@@ -58,6 +58,6 @@ get_header();
   </div><!-- #primary -->
 
   <?php
-get_sidebar('portfolio'); ?>
+get_sidebar(); ?>
 </div>
 <?php get_footer();
