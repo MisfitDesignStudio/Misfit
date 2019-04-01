@@ -105,8 +105,8 @@ add_action( 'after_setup_theme', 'misfitdesign_content_width', 0 );
  */
 function misfitdesign_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'misfitdesign' ),
-		'id'            => 'sidebar-1',
+		'name'          => esc_html__( 'Blog Sidebar', 'misfitdesign' ),
+		'id'            => 'sidebar-blog',
 		'description'   => esc_html__( 'Add widgets here.', 'misfitdesign' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
@@ -114,8 +114,17 @@ function misfitdesign_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 	register_sidebar( array(
-		'name'          => esc_html__( 'SidebarShop', 'misfitdesign' ),
+		'name'          => esc_html__( 'Shop Sidebar', 'misfitdesign' ),
 		'id'            => 'sidebar-shop',
+		'description'   => esc_html__( 'Add widgets here.', 'misfitdesign' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Portfolio Sidebar', 'misfitdesign' ),
+		'id'            => 'sidebar-portfolio',
 		'description'   => esc_html__( 'Add widgets here.', 'misfitdesign' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',

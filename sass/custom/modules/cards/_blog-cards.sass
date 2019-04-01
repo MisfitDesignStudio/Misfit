@@ -1,0 +1,55 @@
+.card
+  &--blog-post
+    &__image
+      a
+        display: block
+        width: 100%
+        height: 250px
+        img
+          display: block
+          width: 100%
+          height: 100%
+          object-fit: cover
+          object-position: center
+
+    &__title
+      margin: 0
+      a
+        padding: 1.3rem
+        padding-left: 0
+        display: block
+        margin-bottom: 0.5rem
+        font-size: 1.8rem
+        font-weight: 900
+        color: $color__text--dark
+        text-decoration: none
+        transition: all ease-in-out 200ms
+        &:hover
+          color: $color__accent
+    
+    &__meta,
+    &__footer
+      background: $color__background--light
+      padding: 0.5rem
+      font-size: 0.7rem
+      color: $color__text
+      margin-bottom: 1rem
+      a
+        color: $color__accent
+        text-transform: uppercase
+        text-decoration: none
+        transition: all ease-in-out 300ms
+        &:hover
+          text-decoration: underline
+    
+    &__footer
+      margin-bottom: 0
+      .comments-link,
+      .edit-link
+        display: inline-block
+        font-weight: 600
+        margin-left: 0.5rem
+
+    &__content
+      padding: 1.5rem 1rem
+      color: $color__text

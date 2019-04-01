@@ -7,11 +7,11 @@
  * @package MisfitDesign
  */
 
-if ( ! is_active_sidebar( 'sidebar-blog' ) ) {
+if ( ! is_active_sidebar( 'sidebar-portfolio' ) ) {
 	return;
 }
 ?>
 
 <aside id="secondary" class="widget-area">
-	<?php dynamic_sidebar( 'sidebar-blog' ); ?>
+	<?php dynamic_sidebar( 'sidebar-portfolio' ); ?>
 </aside><!-- #secondary -->

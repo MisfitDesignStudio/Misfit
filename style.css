@@ -852,6 +852,13 @@ object {
   padding-left: 1rem;
 }
 
+@media only screen and (max-width: 790px) {
+  .content-sidebar .widget-area,
+  .content-sidebar--woo .widget-area {
+    display: none;
+  }
+}
+
 .content-sidebar .widget-area .widget,
 .content-sidebar--woo .widget-area .widget {
   width: 100%;
@@ -1042,6 +1049,7 @@ object {
   .nav {
     min-height: 12vh;
     position: relative;
+    z-index: 100;
   }
 }
 
@@ -1087,7 +1095,7 @@ object {
 
 @media only screen and (max-width: 790px) {
   .nav-links li {
-    margin-right: 20px;
+    margin-right: 40px;
     margin-left: 0;
     opacity: 0;
   }

@@ -1,0 +1,64 @@
+.card
+  &--woo
+    padding: 0
+    box-shadow: none
+    overflow: hidden
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: 1fr
+    a
+      color: $color__accent
+    &:hover
+      .card--woo__overlay
+        transform: translateY(0%)
+    .woocommerce-loop-product__link
+      grid-column: 1 / -1
+      grid-row: 1 / -1
+      text-decoration: none
+    &__image
+      padding: 0
+      img
+        display: block
+        margin: 0
+        width: 100%
+    &__overlay
+      grid-column: 1 / -1
+      grid-row: 1 / -1
+      background: rgba(white, 0.95)
+      position: relative
+      display: grid
+      justify-items: center
+      align-items: center
+      height: 70%
+      margin-top: auto
+      transform: translateY(100%)
+      transition: all ease-in-out 300ms
+      text-align: center
+
+      .woocommerce-loop-product__title
+        color: $color__accent
+        text-decoration: none
+        font-size: 1rem
+        text-transform: uppercase
+        font-weight: 600
+        letter-spacing: 2px
+      
+      .price
+        font-size: 1.2rem
+        del
+          color: $color__text--light
+        ins
+          background-color: none
+          .amount
+            font-size: 1.4rem
+            // color: $color__text--dark
+
+.onsale
+  position: absolute
+  background: $color__accent--secondary
+  width: 50%
+  padding: 0.3rem
+  color: white
+  text-transform: uppercase
+  text-decoration: none
+  text-align: center
