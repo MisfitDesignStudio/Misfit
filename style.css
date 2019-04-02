@@ -1072,12 +1072,7 @@ object {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-}
-
-@media only screen and (max-width: 790px) {
-  .nav-links {
-    height: calc(100vh - 65px);
-  }
+  height: calc(100vh - 65px);
 }
 
 .nav-links li {
