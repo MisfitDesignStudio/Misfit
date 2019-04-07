@@ -19,7 +19,7 @@
 		<h1 class="blog-post-card__title"><?php the_title(); ?><span>Posted on <?php echo get_the_date(); ?></span></h1>
 
 		<div class="blog-post-card__content">
-			<p class="blog-post-card__excerpt"><?php echo wp_trim_words(get_the_content(), 15) ?></p>
+			<p class="blog-post-card__excerpt"><?php echo wp_trim_words(get_the_content(), 10) ?></p>
 			<object><a href="<?php the_permalink(); ?>" class="btn btn--xs btn--secondary--white">Continue reading</a></object>
 		</div>
 	</a>
