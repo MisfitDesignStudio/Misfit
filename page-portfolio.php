@@ -14,44 +14,55 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-			<section class="portfolio-page">
 
-				<h1 class="portfolio-page__title"><?php the_title(); ?></h1>
 
-				<div class="card-grid card-grid--portfolio">
+			<h1 class="page__title"><?php the_title(); ?></h1>
 
-					<!-- Custom Query -->
-					<?php
-        // query arguments 
-        $args = array(
-          'post_type' => 'project',
-          'post_status' => 'publish',
-          'posts_per_page' => -1,
-          'orderby' => 'rand'
-        );
+			<div class="grid-portfolio">
 
-        // the query
-        $portfolioPosts = new WP_Query( $args );
-        
-        // custom loop
-        while($portfolioPosts -> have_posts()) : $portfolioPosts -> the_post();
-        ?>
+				<!-- Custom Query -->
+				<?php
+					// query arguments 
+					$args = array(
+						'post_type' => 'project',
+						'post_status' => 'publish',
+						'posts_per_page' => -1,
+						'orderby' => 'rand'
+					);
 
-					<div class="portfolio-item">
-						<img class="portfolio-item__image" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
-						<div class="portfolio-item__overlay">
-							<a href="<?php the_permalink(); ?>" class="btn btn--small btn--primary"><?php the_title(); ?></a>
-						</div>
-					</div>
+					// the query
+					$portfolioPosts = new WP_Query( $args );
+					
+					// custom loop
+					while($portfolioPosts -> have_posts()) : $portfolioPosts -> the_post();
+					?>
 
-					<?php 
+					<article class="project-card">
+
+						<a href="<?php the_permalink(); ?>" class="project">
+
+							<div class="project__image">
+								<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+							</div>
+
+							<h1 class="project__title"><?php the_title(); ?></h1>
+
+							<div class="project__content">
+								<p class="project__excerpt">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+								<object><a href="<?php the_permalink(); ?>" class="btn btn--small btn--secondary--white">View Project</a></object>
+							</div>
+
+						</a>
+
+					</article>
+
+				<?php 
         //restore original post data
         wp_reset_postdata();
 
         endwhile;  ?>
-				</div>
+			</div> <!-- end portfolio grid-->
 
-			</section>
 
 
 		</main><!-- #main -->
