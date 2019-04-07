@@ -32,7 +32,7 @@ get_header();
 $args = array(
 	'post_type' => 'project',
 	'post_status' => 'publish',
-	'posts_per_page' => 8,
+	'posts_per_page' => 6,
 	'orderby' => 'rand'
 );
 
@@ -50,18 +50,30 @@ if($portfolioPosts->have_posts()) :
 		
 		<h1 class="portfolio-page__title"><?php echo get_the_title(10); ?></h1>
 
-		<div class="card-grid card-grid--portfolio">
+		<div class="grid-portfolio">
 		<?php
 		// custom loop
 		while($portfolioPosts -> have_posts()) : $portfolioPosts -> the_post();
 		?>
 
-			<div class="portfolio-item">            
-				<img class="portfolio-item__image" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">            
-				<div class="portfolio-item__overlay">
-					<a href="<?php the_permalink(); ?>" class="btn btn--small btn--primary"><?php the_title(); ?></a>
+			<article class="project-card">
+
+			<a href="<?php the_permalink(); ?>" class="project">
+
+				<div class="project__image">
+					<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
 				</div>
-			</div>
+
+				<h1 class="project__title"><?php the_title(); ?></h1>
+
+				<div class="project__content">
+					<p class="project__excerpt">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+					<object><a href="<?php the_permalink(); ?>" class="btn btn--small btn--secondary--white">View Project</a></object>
+				</div>
+
+			</a>
+
+			</article>
 
 		<?php 
 		//restore original post data
