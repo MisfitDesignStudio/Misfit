@@ -17,11 +17,11 @@ get_header();
 	<?php 
 		if(is_page(37) OR is_page(36)) :
 	?>
-	<div class="container container--wide v-padding">
+	<div class="container v-padding">
 	<?php 
 		else :
 	?>
-	<div class="container container--wide v-padding content-sidebar">
+	<div class="container v-padding content-sidebar">
 	<?php endif; ?>
 
 	<div id="primary" class="content-area">

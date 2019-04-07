@@ -11,7 +11,7 @@
 get_header();
 ?>
 
-<div class="container v-padding content-sidebar">
+<div class="container v-padding">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
@@ -44,8 +44,5 @@ get_header();
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-	<?php
-	get_sidebar('portfolio'); ?>
 </div>
 <?php get_footer();
