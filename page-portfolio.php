@@ -10,7 +10,7 @@
 
 get_header();
 ?>
-<div class="container container--wide v-padding content-sidebar">
+<div class="container container--wide v-padding">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
@@ -57,7 +57,5 @@ get_header();
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-	<?php
-get_sidebar(); ?>
 </div>
 <?php get_footer();
