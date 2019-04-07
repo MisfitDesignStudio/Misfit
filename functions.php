@@ -202,7 +202,7 @@ if ( class_exists( 'WooCommerce' ) ) {
 	add_action( 'woocommerce_before_shop_loop_item', 'misfit_shop_item_image_wrapper_open', 15 );
 	
 	function misfit_shop_item_image_wrapper_open() {
-	echo '<div class="shop-item__image">';
+	echo '<div class="shop-item-card__image">';
 	}
 
 	// Close image wrapper
@@ -211,14 +211,15 @@ if ( class_exists( 'WooCommerce' ) ) {
 	function misfit_shop_item_image_wrapper_close() {
 	echo '</div>';
 	}
+	add_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_title', 16 );
+
 
 
 
 	// Open shop card overlay wrapper
 	add_action( 'woocommerce_before_shop_loop_item_title', 'misfit_shop_item_overlay_wrapper_open', 20 );
-	
 	function misfit_shop_item_overlay_wrapper_open() {
-	echo '<div class="shop-item__content">';
+	echo '<div class="shop-item-card__content">';
 	}
 
 	// Close shop card overlay wrapper
@@ -233,9 +234,13 @@ if ( class_exists( 'WooCommerce' ) ) {
 	remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
 
 
-	// Customize loop product link open
+	// Remove default loop product link open
 	remove_action( 'woocommerce_before_shop_loop_item', 'woocommerce_template_loop_product_link_open', 10 );
 	remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_product_link_close', 5 );
+
+	//Remove default title position
+	remove_action( 'woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_title', 20 );
+
 
 
 

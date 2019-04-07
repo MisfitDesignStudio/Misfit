@@ -24,8 +24,8 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
 ?>
-<article <?php wc_product_class('shop-item-card'); ?>>
-	<a href="<?php the_permalink(); ?>" class="shop-item">
+<article <?php wc_product_class('shop-grid-item'); ?>>
+	<a href="<?php the_permalink(); ?>" class="shop-item-card">
 	<?php
 	/**
 	 * Hook: woocommerce_before_shop_loop_item.
@@ -47,7 +47,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 *
 	 * @hooked woocommerce_template_loop_product_title - 10
 	 */
-	do_action( 'woocommerce_shop_loop_item_title' );
+	// do_action( 'woocommerce_shop_loop_item_title' );
 
 	/**
 	 * Hook: woocommerce_after_shop_loop_item_title.
