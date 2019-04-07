@@ -1488,8 +1488,7 @@ object {
 }
 
 .project:hover .project__title {
-  -webkit-transform: translateY(-150px);
-          transform: translateY(-150px);
+  top: 40px;
   -webkit-transition: all ease-in-out 300ms;
   transition: all ease-in-out 300ms;
 }
@@ -1547,7 +1546,7 @@ object {
   position: absolute;
   left: 20px;
   right: 20px;
-  bottom: 40px;
+  top: 200px;
   text-align: right;
   -webkit-transition: all ease-in-out 300ms;
   transition: all ease-in-out 300ms;
@@ -1609,8 +1608,7 @@ object {
 }
 
 .project:hover .project__title {
-  -webkit-transform: translateY(-150px);
-          transform: translateY(-150px);
+  top: 40px;
   -webkit-transition: all ease-in-out 300ms;
   transition: all ease-in-out 300ms;
 }
@@ -1668,7 +1666,7 @@ object {
   position: absolute;
   left: 20px;
   right: 20px;
-  bottom: 40px;
+  top: 200px;
   text-align: right;
   -webkit-transition: all ease-in-out 300ms;
   transition: all ease-in-out 300ms;
