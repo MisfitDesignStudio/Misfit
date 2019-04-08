@@ -53,4 +53,4 @@
 		</div>
 	</nav>
 
-	<div id="content" class="site-content container container--wide v-padding content-sidebar--woo">
+	<div id="content" class="site-content container container--wide v-padding sidebar-content">
