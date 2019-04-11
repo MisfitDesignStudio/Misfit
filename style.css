@@ -526,37 +526,6 @@ table {
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-input[type="number"],
-input[type="tel"],
-input[type="range"],
-input[type="date"],
-input[type="month"],
-input[type="week"],
-input[type="time"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="color"],
-textarea {
-  color: #666;
-  border-radius: 3px;
-  padding: 3px;
-  -webkit-box-shadow: inset 0px -3px 0px 0px #00aba9;
-          box-shadow: inset 0px -3px 0px 0px #00aba9;
-}
-
-select {
-  border: 1px solid #ccc;
-}
-
-textarea {
-  width: 100%;
-}
-
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -1325,7 +1294,8 @@ object {
 }
 
 /* Buttons */
-.btn {
+.btn,
+button {
   display: inline-block;
   margin: 0;
   text-transform: uppercase;
@@ -1338,63 +1308,75 @@ object {
   text-align: center;
 }
 
-.btn--xs {
+.btn--xs,
+button--xs {
   font-size: 0.5rem;
   padding: 1em 1.5em;
 }
 
-.btn--small {
+.btn--small,
+button--small {
   font-size: 0.6rem;
   padding: 1.2em 1.8em 1em;
 }
 
-.btn--medium {
+.btn--medium,
+button--medium {
   font-size: 0.6rem;
   padding: 1.4em 2em 1.2em;
 }
 
 @media only screen and (max-width: 790px) {
-  .btn--medium {
+  .btn--medium,
+  button--medium {
     padding: 1em 1.6em;
   }
 }
 
-.btn--primary {
+.btn--primary,
+button--primary {
   background: #00aba9;
   border-color: #00aba9;
   color: white;
 }
 
-.btn--primary:hover {
+.btn--primary:hover,
+button--primary:hover {
   background: white;
   color: #00aba9;
 }
 
-.btn--secondary {
+.btn--secondary,
+button--secondary {
   border-color: #00aba9;
   color: #00aba9;
   background: white;
 }
 
-.btn--secondary:hover {
+.btn--secondary:hover,
+button--secondary:hover {
   background: #00aba9;
   color: white;
 }
 
-.btn--secondary--white {
+.btn--secondary--white,
+button--secondary--white {
   border-color: white;
   color: white;
 }
 
-.btn--secondary--white:hover {
+.btn--secondary--white:hover,
+button--secondary--white:hover {
   background: rgba(255, 255, 255, 0.2);
 }
 
-.btn--back {
+.btn--back,
+button--back {
   margin-top: 3rem;
 }
 
-.btn--card {
+.btn--card,
+button--card {
   position: absolute;
   z-index: 99;
   width: 40px;
@@ -1414,13 +1396,15 @@ object {
   font-size: 1.1rem;
 }
 
-.btn--card i {
+.btn--card i,
+button--card i {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
-.btn--add-to-cart {
+.btn--add-to-cart,
+button--add-to-cart {
   margin-top: 1rem;
 }
 
@@ -2090,113 +2074,7 @@ object {
 }
 
 /* Forms */
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  display: inline-block;
-  margin: 0;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 1px;
-  -webkit-transition: all ease-in-out 200ms;
-  transition: all ease-in-out 200ms;
-  border: 2px solid;
-  text-decoration: none;
-  text-align: center;
-  border-radius: 0;
-  font-size: 0.6rem;
-  padding: 1.2em 1.8em 1em;
-  background: #00aba9;
-  border-color: #00aba9;
-  color: white;
-  cursor: pointer;
-}
-
-button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
-  background: white;
-  border-color: #00aba9;
-  color: #00aba9;
-}
-
-@media only screen and (max-width: 790px) {
-  button,
-  input[type="button"],
-  input[type="reset"],
-  input[type="submit"] {
-    padding: 1em 1.6em;
-  }
-}
-
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-input[type="number"],
-input[type="tel"],
-input[type="range"],
-input[type="date"],
-input[type="month"],
-input[type="week"],
-input[type="time"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="color"],
-textarea {
-  color: #666666;
-  border: none;
-  border-radius: 0;
-  padding: 0.3rem;
-  font-size: 0.8rem;
-  -webkit-transition: all ease-in-out 200ms;
-  transition: all ease-in-out 200ms;
-  -webkit-box-shadow: inset 0px -2px 0px 0px #00aba9;
-          box-shadow: inset 0px -2px 0px 0px #00aba9;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-input[type="search"]:focus,
-input[type="number"]:focus,
-input[type="tel"]:focus,
-input[type="range"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="week"]:focus,
-input[type="time"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="color"]:focus,
-textarea:focus {
-  outline: none;
-  -webkit-box-shadow: inset 0px -1px 0px 0px #00aba9;
-          box-shadow: inset 0px -1px 0px 0px #00aba9;
-}
-
-textarea {
-  width: 100%;
-}
-
-.woocommerce-product-search {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-}
-
-.woocommerce-product-search .search-field {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  border-right: none;
-}
-
+/* Input fields */
 /* Newsletters */
 .newsletter__inner {
   display: -webkit-box;
