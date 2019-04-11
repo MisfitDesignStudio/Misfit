@@ -6,16 +6,16 @@
         method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate newsletter" target="_blank"
         novalidate>
         <div id="mc_embed_signup_scroll" class="newsletter__inner">
+
           <div class="newsletter__content">
             <h4 class="newsletter__content--title">Subscribe to our mailing list<span>for design and business tips and special offers</span></h4>
-            <!-- <p class="newsletter__content--subtitle">We promise not to spam you ;)</p> -->
           </div>
+
           <div class="mc-field-group newsletter__fields">
-            <!-- <label for="mce-EMAIL" class="newsletter__fields--label">Email Address </label> -->
-            <input type="email" value="" placeholder="Your email address" name="EMAIL" class="required email newsletter__fields--input" id="mce-EMAIL">
-            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
-              class="button">
+            <input type="email" value="" placeholder="Your email address" name="EMAIL" class="required email newsletter__fields--input input-field" id="mce-EMAIL">
+            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="newsletter__fields--button btn btn--primary btn--medium">
           </div>
+
           <div id="mce-responses" class="clear">
             <div class="response" id="mce-error-response" style="display:none"></div>
             <div class="response" id="mce-success-response" style="display:none"></div>
