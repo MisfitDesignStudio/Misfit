@@ -1,1 +1,24 @@
 /* Input fields */
+textarea,
+input
+  width: 100%
+  resize: none
+  margin: 1rem 0
+  border: none
+  outline: none
+  border-bottom: 2px solid $color__accent
+  padding: 0.3rem
+  transition: all ease-in 300ms
+  overflow: hidden
+  &::placeholder
+    font-size: 0.8rem
+    text-transform: uppercase
+    color: $color__text--light
+    opacity: 1
+    transform: translateX(0%)
+    transition: all ease-in 600ms
+  &:focus::placeholder
+    opacity: 0
+    transform: translateX(100%)
+  &:invalid
+    border-bottom: 2px solid red

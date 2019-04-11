@@ -1306,6 +1306,7 @@ button {
   border: 2px solid;
   text-decoration: none;
   text-align: center;
+  cursor: pointer;
 }
 
 .btn--xs,
@@ -2075,6 +2076,97 @@ button--add-to-cart {
 
 /* Forms */
 /* Input fields */
+textarea,
+input {
+  width: 100%;
+  resize: none;
+  margin: 1rem 0;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #00aba9;
+  padding: 0.3rem;
+  -webkit-transition: all ease-in 300ms;
+  transition: all ease-in 300ms;
+  overflow: hidden;
+}
+
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #999999;
+  opacity: 1;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: all ease-in 600ms;
+  transition: all ease-in 600ms;
+}
+
+textarea:-ms-input-placeholder,
+input:-ms-input-placeholder {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #999999;
+  opacity: 1;
+  transform: translateX(0%);
+  -webkit-transition: all ease-in 600ms;
+  transition: all ease-in 600ms;
+}
+
+textarea::-ms-input-placeholder,
+input::-ms-input-placeholder {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #999999;
+  opacity: 1;
+  transform: translateX(0%);
+  -webkit-transition: all ease-in 600ms;
+  transition: all ease-in 600ms;
+}
+
+textarea::placeholder,
+input::placeholder {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #999999;
+  opacity: 1;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: all ease-in 600ms;
+  transition: all ease-in 600ms;
+}
+
+textarea:focus::-webkit-input-placeholder,
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+textarea:focus:-ms-input-placeholder,
+input:focus:-ms-input-placeholder {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+textarea:focus::-ms-input-placeholder,
+input:focus::-ms-input-placeholder {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+textarea:focus::placeholder,
+input:focus::placeholder {
+  opacity: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+textarea:invalid,
+input:invalid {
+  border-bottom: 2px solid red;
+}
+
 /* Newsletters */
 .newsletter__inner {
   display: -webkit-box;

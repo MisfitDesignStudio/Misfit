@@ -244,11 +244,16 @@ if ( class_exists( 'WooCommerce' ) ) {
 
 
 
-
-
 function is_portfolio () {
 	return ( is_page() || is_archive() || is_author() || is_category() || is_home() || is_single() || is_tag()) && 'post' == get_post_type('project');
 }
 function is_blog () {
 	return ( is_archive() || is_author() || is_category() || is_home() || is_single() || is_tag()) && 'post' == get_post_type();
 }
+
+// Remove Contact Form 7 span tag around input fields
+add_filter('wpcf7_form_elements', function($content) {
+	$content = preg_replace('/<(span).*?class="\s*(?:.*\s)?wpcf7-form-control-wrap(?:\s[^"]+)?\s*"[^\>]*>(.*)<\/\1>/i', '\2', $content);
+
+	return $content;
+});
