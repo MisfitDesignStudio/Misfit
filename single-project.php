@@ -19,24 +19,23 @@ get_header();
 
 				<?php while (have_posts()) : the_post(); ?>
 
-				<h1 class="project-page__title"><?php the_title(); ?></h1>
+					<h1 class="project-page__title"><?php the_title(); ?></h1>
 
-				<div class="project-page__meta">
-					<h3 class="project-page__meta__client"><?php the_field('client_name'); ?></h3>
-					<ul class="project-page__meta__category-list">
-						<?php
-							foreach (get_categories() as $category) {
-								echo "<li>";
-								echo $category->name;
-								echo "</li>";
-							} ?>
-					</ul>
-				</div>
+					<div class="project-page__meta">
+						<h3 class="project-page__meta__client"><span>Client</span><br><?php the_field('client_name'); ?></h3>
+						<h3 class="project-page__meta__assignment"><span>Assignment</span><br><?php the_field('project_assignment'); ?></h3>
+					</div>
 
-				<?php the_content(); ?>
+					<div class="project-page__featured-image">
+						<img src="<?php the_post_thumbnail_url(); ?>" alt="">
+					</div>
 
-				<a href="<?php echo get_home_url(); ?>/portfolio" class="btn btn--medium btn--secondary btn--back">See all
-					projects</a>
+					<div class="content-wrapper">
+						<?php the_content(); ?>
+					</div>
+
+					<a href="<?php echo get_home_url(); ?>/portfolio" class="btn btn--medium btn--secondary btn--back">See all
+						projects</a>
 
 				<?php endwhile; ?>
 

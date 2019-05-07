@@ -900,7 +900,7 @@ object {
   display: block;
   width: 30px;
   height: 30px;
-  background: #FF5A09;
+  background: #ff5a09;
   font-size: 2rem;
   color: white;
   font-weight: 600;
@@ -2232,42 +2232,67 @@ input:invalid {
   margin: 2rem 0;
 }
 
+.project-page__title {
+  padding-left: 1rem;
+  border-left: 3px solid #00aba9;
+}
+
 .project-page__meta {
   background: #eeeeee;
   padding: 1rem;
-}
-
-.project-page__meta__client {
-  margin: 0;
-  color: gray;
-  font-weight: 600;
-}
-
-.project-page__meta__category-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.project-page__meta__client, .project-page__meta__assignment {
+  margin: 0;
+  padding: 0 15px;
+  border-right: 1px solid #00aba9;
+  font-size: 0.8rem;
+  font-weight: 600;
   color: #00aba9;
   text-transform: uppercase;
-  font-size: 0.6rem;
-  font-weight: 600;
-  margin-top: 0.5rem;
 }
 
-.project-page__meta__category-list li {
-  margin-right: 1rem;
+.project-page__meta__client:first-child, .project-page__meta__assignment:first-child {
+  padding-left: 0;
 }
 
-.project-page__meta__category-list li::after {
-  content: '|';
-  margin-left: 1rem;
+.project-page__meta__client:last-child, .project-page__meta__assignment:last-child {
+  border-right: none;
+  padding-right: 0;
 }
 
-.project-page__meta__category-list li:last-child::after {
-  display: none;
+.project-page__meta__client span, .project-page__meta__assignment span {
+  text-transform: capitalize;
+  color: gray;
+  font-size: 0.8rem;
+}
+
+.project-page__featured-image {
+  width: 100%;
+  height: 500px;
+  margin: 15px;
+  margin-left: 0;
+}
+
+.project-page__featured-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+@media only screen and (max-width: 790px) {
+  .project-page__featured-image {
+    width: 100%;
+    margin: 15px 0;
+    height: 300px;
+  }
 }
 
 /* Related Posts Section */
@@ -2542,7 +2567,7 @@ input:invalid {
 
 .misfit-single-product .onsale {
   position: absolute;
-  background: #FF5A09;
+  background: #00aba9;
   width: 10%;
   padding: 0.3rem;
   color: white;
@@ -2869,7 +2894,7 @@ form.woocommerce-cart-form table tbody tr .product-remove {
 
 form.woocommerce-cart-form table tbody tr .product-remove a {
   display: block;
-  background: #FF5A09;
+  background: #ff5a09;
   text-align: center;
   line-height: 20px;
   color: white;
