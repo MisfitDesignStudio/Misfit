@@ -20,6 +20,10 @@
 		<?php endif; ?>
 	</div>
 
+	<p class="single-blog-post__subtitle">
+		<?php the_field('blog_post_subtitle'); ?>
+	</p>
+
 	<div class="single-blog-post__content">
 		<?php the_content(); ?>
 	</div>
