@@ -972,7 +972,7 @@ object {
   color: #00aba9;
 }
 
-.nav {
+.main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -990,7 +990,7 @@ object {
   z-index: 100;
 }
 
-.nav-links {
+.main-nav-links {
   margin: 0;
   padding: 0;
   display: -webkit-box;
@@ -1019,7 +1019,7 @@ object {
   height: calc(100vh - 65px);
 }
 
-.nav-links li {
+.main-nav-links li {
   margin-right: 20%;
   margin-left: 0;
   opacity: 0;
@@ -1031,12 +1031,12 @@ object {
 }
 
 @media only screen and (max-width: 790px) {
-  .nav-links li {
+  .main-nav-links li {
     margin-right: 10%;
   }
 }
 
-.nav-links li a {
+.main-nav-links li a {
   display: inline-block;
   height: 100%;
   font-size: 0.8rem;
@@ -1050,7 +1050,7 @@ object {
   padding: 1rem 0;
 }
 
-.nav-links li a::after {
+.main-nav-links li a::after {
   content: '';
   width: 0px;
   height: 0.55rem;
@@ -1061,11 +1061,11 @@ object {
   transition: all ease-in-out 300ms;
 }
 
-.nav-links li a:hover {
+.main-nav-links li a:hover {
   color: #00aba9;
 }
 
-.nav-links li a:hover::after {
+.main-nav-links li a:hover::after {
   width: 10px;
   background-color: #00aba9;
 }
@@ -2384,11 +2384,13 @@ input:invalid {
   margin: 0;
 }
 
-.post-navigation {
+.post-navigation,
+.posts-navigation {
   background-color: #eeeeee;
 }
 
-.post-navigation .nav-links {
+.post-navigation .nav-links,
+.posts-navigation .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2397,7 +2399,8 @@ input:invalid {
           justify-content: space-between;
 }
 
-.post-navigation .nav-links a {
+.post-navigation .nav-links a,
+.posts-navigation .nav-links a {
   display: inline-block;
   padding: 0.6rem;
   color: #313131;
@@ -2409,16 +2412,23 @@ input:invalid {
   transition: all ease-in-out 200ms;
 }
 
-.post-navigation .nav-links a:hover {
+.post-navigation .nav-links a:hover,
+.posts-navigation .nav-links a:hover {
   color: #00aba9;
 }
 
-.post-navigation .nav-links a .fa-caret-left {
+.post-navigation .nav-links a .fa-caret-left,
+.posts-navigation .nav-links a .fa-caret-left {
   margin-right: 0.6rem;
 }
 
-.post-navigation .nav-links a .fa-caret-right {
+.post-navigation .nav-links a .fa-caret-right,
+.posts-navigation .nav-links a .fa-caret-right {
   margin-left: 0.6rem;
+}
+
+.posts-navigation {
+  margin-top: 20px;
 }
 
 .woocommerce-breadcrumb {

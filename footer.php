@@ -11,14 +11,15 @@
 
 ?>
 
-	</div><!-- #content -->
+</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
-		&copy; Misfit Design Studio
-	</footer><!-- #colophon -->
+<footer id="colophon" class="site-footer">
+	&copy; Misfit Design Studio
+</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
 
 </body>
+
 </html>
