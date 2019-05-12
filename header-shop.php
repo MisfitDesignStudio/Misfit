@@ -54,4 +54,4 @@
 			</div>
 		</nav>
 
-		<div id="content" class="site-content container container--wide v-padding">
+		<div id="content" class="site-content container v-padding">
