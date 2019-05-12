@@ -43,23 +43,35 @@
       width: 100%
       margin: 15px 0
       height: 300px
-/* Related Posts Section */
 
-.related-posts-title
-  font-weight: 400
-  color: $color__text
-  &::before
-    content: ''
-    display: block  
+
+/* Gallery Section*/
+.project-page__gallery
+  width: 60%
+  margin: 100px auto
+  @include tablet-s
     width: 100%
-    height: 1px
-    background-color: $color__accent
-    margin: 3rem 0 2rem
-.related-posts
-  list-style: none
-  margin: 2rem 0
-  padding-inline-start: 0
-  display: grid
-  grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) )
-  grid-gap: 1rem
+    margin-top: 50px
+    margin-bottom: 50px
+
+.project-image-wrapper
+  margin-bottom: 20px
+
+.project-image
+  width: 100%
+  height: 100%
+  img
+    display: block
+    margin: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+    object-position: center
+.project-image-caption
+  background-color: lighten($color__text--light, 30)
+  color: $color__text--dark
+  padding: 8px 15px
+  border-left: 2px solid $color__accent
+  font-size: 0.7rem
+  margin: 0
       
