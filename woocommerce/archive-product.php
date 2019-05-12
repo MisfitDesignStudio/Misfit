@@ -15,9 +15,9 @@
  * @version 3.4.0
  */
 
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
-get_header( 'shop' );
+get_header('shop');
 
 /**
  * Hook: woocommerce_before_main_content.
@@ -26,26 +26,25 @@ get_header( 'shop' );
  * @hooked woocommerce_breadcrumb - 20
  * @hooked WC_Structured_Data::generate_website_data() - 30
  */
-do_action( 'woocommerce_before_main_content' );
-
+do_action('woocommerce_before_main_content');
 ?>
 
 <?php
-if ( woocommerce_product_loop() ) { 
+if (woocommerce_product_loop()) {
 
-		/**
-		 * Hook: woocommerce_before_shop_loop.
-		 *
-		 * @hooked woocommerce_output_all_notices - 10
-		 * @hooked woocommerce_result_count - 20
-		 * @hooked woocommerce_catalog_ordering - 30
-		 */
-		do_action( 'woocommerce_before_shop_loop' );
-		
+	/**
+	 * Hook: woocommerce_before_shop_loop.
+	 *
+	 * @hooked woocommerce_output_all_notices - 10
+	 * @hooked woocommerce_result_count - 20
+	 * @hooked woocommerce_catalog_ordering - 30
+	 */
+	do_action('woocommerce_before_shop_loop');
+
 	woocommerce_product_loop_start();
 
-	if ( wc_get_loop_prop( 'total' ) ) {
-		while ( have_posts() ) {
+	if (wc_get_loop_prop('total')) {
+		while (have_posts()) {
 			the_post();
 
 			/**
@@ -53,9 +52,9 @@ if ( woocommerce_product_loop() ) {
 			 *
 			 * @hooked WC_Structured_Data::generate_product_data() - 10
 			 */
-			do_action( 'woocommerce_shop_loop' );
+			do_action('woocommerce_shop_loop');
 
-			wc_get_template_part( 'content', 'product' );
+			wc_get_template_part('content', 'product');
 		}
 	}
 
@@ -66,14 +65,14 @@ if ( woocommerce_product_loop() ) {
 	 *
 	 * @hooked woocommerce_pagination - 10
 	 */
-	do_action( 'woocommerce_after_shop_loop' );
+	do_action('woocommerce_after_shop_loop');
 } else {
 	/**
 	 * Hook: woocommerce_no_products_found.
 	 *
 	 * @hooked wc_no_products_found - 10
 	 */
-	do_action( 'woocommerce_no_products_found' );
+	do_action('woocommerce_no_products_found');
 }
 
 /**
@@ -81,14 +80,14 @@ if ( woocommerce_product_loop() ) {
  *
  * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
  */
-do_action( 'woocommerce_after_main_content' );
+do_action('woocommerce_after_main_content');
 
 /**
  * Hook: woocommerce_sidebar.
  *
  * @hooked woocommerce_get_sidebar - 10
  */
-do_action( 'woocommerce_sidebar' ); ?>
+?>
 </div>
 
-<?php get_footer( 'shop' );
+<?php get_footer('shop');
