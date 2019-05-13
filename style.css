@@ -1308,6 +1308,12 @@ button--medium {
   }
 }
 
+.btn--comment,
+button--comment {
+  display: block;
+  width: auto;
+}
+
 .btn--primary,
 button--primary {
   background: #00aba9;
@@ -1953,14 +1959,30 @@ button--add-to-cart {
   font-size: 0.8rem;
 }
 
-.comment-form .comment-form-comment {
+.comment-form .comment-form-comment,
+.comment-form .comment-form-author,
+.comment-form .comment-form-email,
+.comment-form .comment-form-url {
   font-size: 0.9rem;
 }
 
-.comment-form .comment-form-comment textarea {
-  padding: 1rem;
+.comment-form .comment-form-comment label,
+.comment-form .comment-form-author label,
+.comment-form .comment-form-email label,
+.comment-form .comment-form-url label {
   font-size: 0.8rem;
-  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.comment-form .comment-form-cookies-consent {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #666666;
+}
+
+.comment-form .comment-form-cookies-consent input {
+  width: auto;
+  margin-right: 1rem;
 }
 
 /* Forms */
@@ -1969,11 +1991,9 @@ textarea,
 input {
   width: 100%;
   resize: none;
-  margin: 1rem 0;
   border: none;
   outline: none;
-  border-bottom: 2px solid #00aba9;
-  padding: 0.3rem;
+  border-bottom: 1px solid #00aba9;
   -webkit-transition: all ease-in 300ms;
   transition: all ease-in 300ms;
   overflow: hidden;
@@ -2049,11 +2069,6 @@ input:focus::placeholder {
   opacity: 0;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-}
-
-textarea:invalid,
-input:invalid {
-  border-bottom: 2px solid red;
 }
 
 /* Newsletters */

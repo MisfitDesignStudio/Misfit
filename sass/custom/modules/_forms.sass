@@ -3,11 +3,9 @@ textarea,
 input
   width: 100%
   resize: none
-  margin: 1rem 0
   border: none
   outline: none
-  border-bottom: 2px solid $color__accent
-  padding: 0.3rem
+  border-bottom: 1px solid $color__accent
   transition: all ease-in 300ms
   overflow: hidden
   &::placeholder
@@ -20,5 +18,3 @@ input
   &:focus::placeholder
     opacity: 0
     transform: translateX(100%)
-  &:invalid
-    border-bottom: 2px solid red
