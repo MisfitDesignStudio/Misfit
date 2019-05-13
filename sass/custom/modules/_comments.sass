@@ -48,6 +48,12 @@
   border-top: 1px solid $color__background--light
 
 .comment-form
+  width: 60%
+  margin: 1rem auto
+  @include tablet-m
+    width: 75%
+  @include tablet-s
+    width: 100%
   .logged-in-as
     a
       text-transform: uppercase

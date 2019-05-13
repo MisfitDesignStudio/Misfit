@@ -1954,6 +1954,23 @@ button--add-to-cart {
   border-top: 1px solid #eeeeee;
 }
 
+.comment-form {
+  width: 60%;
+  margin: 1rem auto;
+}
+
+@media only screen and (max-width: 790px) {
+  .comment-form {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .comment-form {
+    width: 100%;
+  }
+}
+
 .comment-form .logged-in-as a {
   text-transform: uppercase;
   font-size: 0.8rem;
@@ -1997,6 +2014,8 @@ input {
   -webkit-transition: all ease-in 300ms;
   transition: all ease-in 300ms;
   overflow: hidden;
+  background-color: #fbfbfb;
+  padding: 0.3rem 0.5rem;
 }
 
 textarea::-webkit-input-placeholder,
