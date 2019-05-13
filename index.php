@@ -15,17 +15,17 @@
 get_header();
 ?>
 <div class="container v-padding">
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
 
-			<?php if (have_posts()) :
+	<?php if (is_home() && !is_front_page()) : ?>
+		<h1 class="page__title"><?php single_post_title(); ?></h1>
+		<header>
+			<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+		</header>
+	<?php endif; ?>
 
-				if (is_home() && !is_front_page()) : ?>
-					<h1 class="page__title"><?php single_post_title(); ?></h1>
-					<header>
-						<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-					</header>
-				<?php endif; ?>
+	<div class="content-sidebar">
+		<div class="content-area">
+			<?php if (have_posts()) : ?>
 
 				<div class="grid-blog">
 					<?php
@@ -45,9 +45,13 @@ get_header();
 				get_template_part('template-parts/content', 'none');
 
 			endif; ?>
+		</div>
+		<div class="sidebar-area">
+			<?php get_sidebar(); ?>
+		</div>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	</div>
+
 </div>
 <?php
 get_footer();
