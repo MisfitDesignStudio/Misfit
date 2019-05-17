@@ -7,15 +7,18 @@
  * @package MisfitDesign
  */
 
-if ( is_portfolio() OR is_page('portfolio')) { ?>
+if (is_portfolio() or is_page('portfolio')) { ?>
 	<aside id="secondary" class="widget-area">
-		<?php dynamic_sidebar( 'sidebar-portfolio' ); ?>
+		<?php dynamic_sidebar('sidebar-portfolio'); ?>
 	</aside><!-- #secondary -->
 
-<?php } elseif ( is_blog() ) { ?>
+<?php } elseif (is_blog()) { ?>
 	<aside id="secondary" class="widget-area">
-		<?php dynamic_sidebar( 'sidebar-blog' ); ?>
+		<?php dynamic_sidebar('sidebar-blog'); ?>
+	</aside><!-- #secondary -->
+<?php } elseif (is_page('shop')) { ?>
+	<aside id="secondary" class="widget-area">
+		<?php dynamic_sidebar('sidebar-shop'); ?>
 	</aside><!-- #secondary -->
 <?php }
 ?>
-

@@ -1,59 +1,40 @@
 <?php
 /**
- * Template part for displaying posts
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
  * @package MisfitDesign
  */
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
+<h1 class="single-blog-post__title"><?php the_title(); ?></h1>
 
-		if ( 'post' === get_post_type() ) :
-			?>
-			<div class="entry-meta">
-				<?php
-				misfitdesign_posted_on();
-				misfitdesign_posted_by();
-				?>
-			</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
+<small class="single-blog-post__meta">Posted by <?php the_author(); ?> on <?php the_date(); ?> in: <span><?php the_category(', '); ?></span></small>
 
-	<?php misfitdesign_post_thumbnail(); ?>
+<div class="single-blog-post__hero">
+	<?php if (has_post_thumbnail()) : ?>
+		<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt=" ">
+	<?php else : ?>
+		<img src="<?php echo get_template_directory_uri(); ?>/img/blog-post.jpg" alt="">
+	<?php endif; ?>
+</div>
+<article class="single-blog-post">
 
-	<div class="entry-content">
-		<?php
-		the_content( sprintf(
-			wp_kses(
-				/* translators: %s: Name of current post. Only visible to screen readers */
-				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'misfitdesign' ),
-				array(
-					'span' => array(
-						'class' => array(),
-					),
-				)
-			),
-			get_the_title()
-		) );
 
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'misfitdesign' ),
-			'after'  => '</div>',
-		) );
-		?>
-	</div><!-- .entry-content -->
+	<div class="content-sidebar">
+		<div class="content-area">
 
-	<footer class="entry-footer">
-		<?php misfitdesign_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-<?php the_ID(); ?> -->
+			<p class="single-blog-post__subtitle">
+				<?php the_field('blog_post_subtitle'); ?>
+			</p>
+
+			<div class="single-blog-post__content">
+				<?php the_content(); ?>
+			</div>
+		</div>
+
+		<div class="sidebar-area">
+			<?php get_sidebar(); ?>
+		</div>
+	</div>
+
+
+</article>
