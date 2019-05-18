@@ -1056,6 +1056,38 @@ object {
   width: 40px;
 }
 
+/* Post(s) navigation */
+.post-navigation .nav-links,
+.posts-navigation .nav-links {
+  border-top: 1px solid #00aba9;
+  border-bottom: 1px solid #00aba9;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.post-navigation .nav-links a,
+.posts-navigation .nav-links a {
+  color: #00aba9;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.post-navigation .nav-links a:hover,
+.posts-navigation .nav-links a:hover {
+  text-decoration: underline;
+}
+
+.posts-navigation {
+  margin: 1rem 0;
+}
+
 /* Footer*/
 .site-footer {
   background: #313131;
@@ -2034,6 +2066,12 @@ input:focus::placeholder {
 
 /* Sidebars */
 /* General Styles */
+@media only screen and (max-width: 790px) {
+  .widget-area {
+    margin-top: 2rem;
+  }
+}
+
 .widget {
   background-color: white;
   -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
@@ -2295,30 +2333,6 @@ input:focus::placeholder {
 
 .single-blog-post__content img {
   max-width: 100%;
-}
-
-.post-navigation .nav-links {
-  border-top: 1px solid #00aba9;
-  border-bottom: 1px solid #00aba9;
-  padding: 0.5rem;
-  font-size: 0.8rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.post-navigation .nav-links a {
-  color: #00aba9;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-.post-navigation .nav-links a:hover {
-  text-decoration: underline;
 }
 
 .woocommerce-breadcrumb {

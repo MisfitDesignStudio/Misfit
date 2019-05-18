@@ -152,3 +152,24 @@
 
 .nav-logo
   width: 40px
+
+/* Post(s) navigation */
+.post-navigation,
+.posts-navigation
+  .nav-links
+    border-top: 1px solid $color__accent
+    border-bottom: 1px solid $color__accent
+    padding: 0.5rem
+    font-size: 0.8rem
+    display: flex
+    justify-content: space-between
+    a
+      color: $color__accent
+      text-decoration: none
+      text-transform: uppercase
+      font-weight: 600
+      &:hover
+        text-decoration: underline
+
+.posts-navigation
+  margin: 1rem 0
