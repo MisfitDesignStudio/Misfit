@@ -1916,91 +1916,85 @@ button--add-to-cart {
 }
 
 /* Forms */
-/* Input fields */
-textarea,
-input {
-  width: 100%;
-  resize: none;
+/* Form fields */
+input,
+textarea {
   border: none;
+  border-bottom: 1px solid #b3b3b3;
+  padding: 0;
+  font-size: 0.8rem;
+  padding: 5px;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #999999;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #999999;
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  color: #999999;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #999999;
+}
+
+input:focus,
+textarea:focus {
   outline: none;
-  border-bottom: 1px solid #00aba9;
-  -webkit-transition: all ease-in 300ms;
-  transition: all ease-in 300ms;
-  overflow: hidden;
-  background-color: #fbfbfb;
-  padding: 0.3rem 0.5rem;
 }
 
-textarea::-webkit-input-placeholder,
-input::-webkit-input-placeholder {
-  font-size: 0.8rem;
+/* Contact Form 7 styles */
+.wpcf7-form label {
+  margin-bottom: 2rem !important;
+}
+
+/* Widget Search */
+.widget_search .search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.widget_search .search-form label {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.widget_search .search-form label .search-field {
+  width: 100%;
+}
+
+.widget_search .search-form .search-submit {
+  display: inline-block;
+  margin: 0;
   text-transform: uppercase;
-  color: #999999;
-  opacity: 1;
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
-  -webkit-transition: all ease-in 600ms;
-  transition: all ease-in 600ms;
+  font-weight: 600;
+  letter-spacing: 1px;
+  -webkit-transition: all ease-in-out 200ms;
+  transition: all ease-in-out 200ms;
+  border: 2px solid;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  background: #00aba9;
+  border-color: #00aba9;
+  color: white;
+  font-size: 0.6rem;
 }
 
-textarea:-ms-input-placeholder,
-input:-ms-input-placeholder {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  color: #999999;
-  opacity: 1;
-  transform: translateX(0%);
-  -webkit-transition: all ease-in 600ms;
-  transition: all ease-in 600ms;
-}
-
-textarea::-ms-input-placeholder,
-input::-ms-input-placeholder {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  color: #999999;
-  opacity: 1;
-  transform: translateX(0%);
-  -webkit-transition: all ease-in 600ms;
-  transition: all ease-in 600ms;
-}
-
-textarea::placeholder,
-input::placeholder {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  color: #999999;
-  opacity: 1;
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
-  -webkit-transition: all ease-in 600ms;
-  transition: all ease-in 600ms;
-}
-
-textarea:focus::-webkit-input-placeholder,
-input:focus::-webkit-input-placeholder {
-  opacity: 0;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-}
-
-textarea:focus:-ms-input-placeholder,
-input:focus:-ms-input-placeholder {
-  opacity: 0;
-  transform: translateX(100%);
-}
-
-textarea:focus::-ms-input-placeholder,
-input:focus::-ms-input-placeholder {
-  opacity: 0;
-  transform: translateX(100%);
-}
-
-textarea:focus::placeholder,
-input:focus::placeholder {
-  opacity: 0;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+.widget_search .search-form .search-submit:hover {
+  background: white;
+  color: #00aba9;
 }
 
 /* Newsletters */
