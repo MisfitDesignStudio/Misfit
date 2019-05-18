@@ -14,7 +14,7 @@
 
 get_header();
 ?>
-<div class="container container--wide v-padding">
+<div class="container v-padding">
 
 	<?php if (is_home() && !is_front_page()) : ?>
 		<h1 class="page__title"><?php single_post_title(); ?></h1>
