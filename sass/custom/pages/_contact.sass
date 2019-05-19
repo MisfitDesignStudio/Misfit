@@ -73,7 +73,7 @@
       width: 100%
 
 .contact-page__social-buttons
-  width: 30%
+  width: 20%
   margin: 2rem 0
   display: flex
   justify-content: space-between
@@ -81,16 +81,18 @@
     width: 50%
   .contact__social__link
     display: block
-    font-size: 2rem
+    font-size: 1.2rem
     text-decoration: none
     color: $color__text--light
     transition: all ease-in-out 300ms
+    @include tablet-m
+      font-size: 2rem
     &:hover
       color: $color__accent
 
 .contact-page__form
   width: 70%
-  margin: 4rem 0
+  margin: 2rem 0
   @include tablet-m
     width: 100%
 

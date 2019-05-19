@@ -2985,7 +2985,7 @@ form.checkout .col2-set .col-1 .woocommerce-billing-fields .woocommerce-billing-
 }
 
 .contact-page__social-buttons {
-  width: 30%;
+  width: 20%;
   margin: 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3003,11 +3003,17 @@ form.checkout .col2-set .col-1 .woocommerce-billing-fields .woocommerce-billing-
 
 .contact-page__social-buttons .contact__social__link {
   display: block;
-  font-size: 2rem;
+  font-size: 1.2rem;
   text-decoration: none;
   color: #999999;
   -webkit-transition: all ease-in-out 300ms;
   transition: all ease-in-out 300ms;
+}
+
+@media only screen and (max-width: 790px) {
+  .contact-page__social-buttons .contact__social__link {
+    font-size: 2rem;
+  }
 }
 
 .contact-page__social-buttons .contact__social__link:hover {
@@ -3016,7 +3022,7 @@ form.checkout .col2-set .col-1 .woocommerce-billing-fields .woocommerce-billing-
 
 .contact-page__form {
   width: 70%;
-  margin: 4rem 0;
+  margin: 2rem 0;
 }
 
 @media only screen and (max-width: 790px) {
