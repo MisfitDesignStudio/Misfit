@@ -408,7 +408,7 @@ p {
 }
 
 p a {
-  color: #00aba9;
+  color: #0d69c5;
   text-decoration: none;
 }
 
@@ -850,7 +850,7 @@ object {
 }
 
 .social-bar__link:hover {
-  color: #00aba9;
+  color: #0d69c5;
 }
 
 .main-nav {
@@ -943,16 +943,16 @@ object {
 }
 
 .main-nav-links li a:hover {
-  color: #00aba9;
+  color: #0d69c5;
 }
 
 .main-nav-links li a:hover::after {
   width: 10px;
-  background-color: #00aba9;
+  background-color: #0d69c5;
 }
 
 .current-menu-item {
-  color: #00aba9;
+  color: #0d69c5;
 }
 
 .burger {
@@ -961,7 +961,7 @@ object {
 }
 
 .burger:hover div {
-  background-color: #00aba9;
+  background-color: #0d69c5;
 }
 
 .burger:hover .line1 {
@@ -1030,7 +1030,7 @@ object {
 }
 
 .burger-toggle:hover .line1, .burger-toggle:hover .line1, .burger-toggle:hover .line3 {
-  background-color: #00aba9;
+  background-color: #0d69c5;
 }
 
 .burger-toggle .line1 {
@@ -1059,8 +1059,8 @@ object {
 /* Post(s) navigation */
 .post-navigation .nav-links,
 .posts-navigation .nav-links {
-  border-top: 1px solid #00aba9;
-  border-bottom: 1px solid #00aba9;
+  border-top: 1px solid #0d69c5;
+  border-bottom: 1px solid #0d69c5;
   padding: 0.5rem;
   font-size: 0.8rem;
   display: -webkit-box;
@@ -1073,7 +1073,7 @@ object {
 
 .post-navigation .nav-links a,
 .posts-navigation .nav-links a {
-  color: #00aba9;
+  color: #0d69c5;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
@@ -1161,7 +1161,7 @@ object {
   width: 250px;
   margin: 2rem 0;
   height: 5px;
-  background: #00aba9;
+  background: #0d69c5;
   display: block;
 }
 
@@ -1229,27 +1229,27 @@ button--comment {
 
 .btn--primary,
 button--primary {
-  background: #00aba9;
-  border-color: #00aba9;
+  background: #0d69c5;
+  border-color: #0d69c5;
   color: white;
 }
 
 .btn--primary:hover,
 button--primary:hover {
   background: white;
-  color: #00aba9;
+  color: #0d69c5;
 }
 
 .btn--secondary,
 button--secondary {
-  border-color: #00aba9;
-  color: #00aba9;
+  border-color: #0d69c5;
+  color: #0d69c5;
   background: white;
 }
 
 .btn--secondary:hover,
 button--secondary:hover {
-  background: #00aba9;
+  background: #0d69c5;
   color: white;
 }
 
@@ -1317,15 +1317,15 @@ button--add-to-cart {
   text-align: center;
   font-size: 0.6rem;
   padding: 1.2em 1.8em 1em;
-  background: #00aba9;
-  border-color: #00aba9;
+  background: #0d69c5;
+  border-color: #0d69c5;
   color: white;
 }
 
 .button:hover,
 .added_to_cart:hover {
   background: white;
-  color: #00aba9;
+  color: #0d69c5;
 }
 
 .button:first-child,
@@ -1647,7 +1647,7 @@ button--add-to-cart {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #00aba9;
+  background-color: #0d69c5;
   color: white;
   font-size: 0.8rem;
   text-transform: uppercase;
@@ -1804,7 +1804,7 @@ button--add-to-cart {
 }
 
 .comments-area li {
-  border-left: 2px solid rgba(0, 171, 169, 0.5);
+  border-left: 2px solid rgba(13, 105, 197, 0.5);
   margin-bottom: 1rem;
 }
 
@@ -1833,7 +1833,7 @@ button--add-to-cart {
 }
 
 .comments-area li article footer.comment-meta .comment-metadata a {
-  color: #00aba9;
+  color: #0d69c5;
   font-size: 0.7rem;
   text-decoration: none;
   -webkit-transition: all ease-in-out 200ms;
@@ -1853,7 +1853,7 @@ button--add-to-cart {
 }
 
 .comments-area li article .reply a {
-  color: #00aba9;
+  color: #0d69c5;
   font-size: 0.8rem;
   text-decoration: none;
 }
@@ -1949,6 +1949,7 @@ textarea::placeholder {
 input:focus,
 textarea:focus {
   outline: none;
+  border-bottom: 1px solid #0d69c5;
 }
 
 /* Contact Form 7 styles */
@@ -1986,15 +1987,15 @@ textarea:focus {
   text-decoration: none;
   text-align: center;
   cursor: pointer;
-  background: #00aba9;
-  border-color: #00aba9;
+  background: #0d69c5;
+  border-color: #0d69c5;
   color: white;
   font-size: 0.6rem;
 }
 
 .widget_search .search-form .search-submit:hover {
   background: white;
-  color: #00aba9;
+  color: #0d69c5;
 }
 
 /* Newsletters */
@@ -2024,7 +2025,7 @@ textarea:focus {
 
 .newsletter__content--title {
   margin: 0;
-  color: #00aba9;
+  color: #0d69c5;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -2095,7 +2096,7 @@ textarea:focus {
   display: inline-block;
   width: 7px;
   height: 3px;
-  background-color: #00aba9;
+  background-color: #0d69c5;
   margin-right: 0.3rem;
 }
 
@@ -2149,7 +2150,7 @@ textarea:focus {
 }
 
 .rpwe-li .rpwe-title a:hover {
-  color: #00aba9;
+  color: #0d69c5;
 }
 
 .rpwe-li .rpwe-time {
@@ -2164,7 +2165,7 @@ textarea:focus {
 
 .project-page__title {
   padding-left: 1rem;
-  border-left: 3px solid #00aba9;
+  border-left: 3px solid #0d69c5;
 }
 
 .project-page__meta {
@@ -2178,10 +2179,10 @@ textarea:focus {
 .project-page__meta__client, .project-page__meta__assignment {
   margin: 0;
   padding: 0 15px;
-  border-right: 1px solid #00aba9;
+  border-right: 1px solid #0d69c5;
   font-size: 0.8rem;
   font-weight: 600;
-  color: #00aba9;
+  color: #0d69c5;
   text-transform: uppercase;
 }
 
@@ -2263,7 +2264,7 @@ textarea:focus {
   background-color: #e6e6e6;
   color: #313131;
   padding: 8px 15px;
-  border-left: 2px solid #00aba9;
+  border-left: 2px solid #0d69c5;
   font-size: 0.7rem;
   margin: 0;
 }
@@ -2283,11 +2284,11 @@ textarea:focus {
   margin-right: 0.5rem;
   width: 15px;
   height: 3px;
-  background-color: #00aba9;
+  background-color: #0d69c5;
 }
 
 .single-blog-post__meta span a {
-  color: #00aba9;
+  color: #0d69c5;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
@@ -2345,7 +2346,7 @@ textarea:focus {
 }
 
 .woocommerce-breadcrumb a:hover {
-  color: #00aba9;
+  color: #0d69c5;
 }
 
 .woocommerce-notices-wrapper {
@@ -2354,7 +2355,7 @@ textarea:focus {
 
 .woocommerce-notices-wrapper .woocommerce-message {
   padding: 1rem;
-  background: #00c5c2;
+  background: #0f76dd;
   font-size: 0.9rem;
   color: white;
   text-transform: uppercase;
@@ -2371,7 +2372,7 @@ textarea:focus {
 }
 
 .woocommerce-notices-wrapper .woocommerce-message a:hover {
-  color: #00aba9;
+  color: #0d69c5;
 }
 
 .woocommerce-result-count {
@@ -2435,7 +2436,7 @@ textarea:focus {
 }
 
 .woocommerce-pagination .page-numbers li a {
-  color: #00aba9;
+  color: #0d69c5;
   font-weight: 600;
   -webkit-transition: all ease-in-out 200ms;
   transition: all ease-in-out 200ms;
@@ -2465,7 +2466,7 @@ textarea:focus {
 
 .misfit-single-product .onsale {
   position: absolute;
-  background: #00aba9;
+  background: #0d69c5;
   width: 10%;
   padding: 0.3rem;
   color: white;
@@ -2572,7 +2573,7 @@ textarea:focus {
   grid-gap: 2px;
   padding-top: 1rem;
   margin-top: 1rem;
-  border-top: 1px solid #00aba9;
+  border-top: 1px solid #0d69c5;
   width: 100%;
 }
 
@@ -2594,7 +2595,7 @@ textarea:focus {
 }
 
 .misfit-single-product .summary .price {
-  color: #00aba9;
+  color: #0d69c5;
   font-size: 1.2rem;
   font-weight: 600;
 }
@@ -2639,7 +2640,7 @@ textarea:focus {
 }
 
 .misfit-single-product .summary .product_meta .posted_in a:hover {
-  color: #00aba9;
+  color: #0d69c5;
 }
 
 .misfit-single-product .summary .variations_form {
@@ -2708,13 +2709,13 @@ textarea:focus {
 }
 
 .misfit-single-product .woocommerce-tabs .tabs li {
-  border-right: 1px solid #00aba9;
+  border-right: 1px solid #0d69c5;
 }
 
 @media only screen and (max-width: 600px) {
   .misfit-single-product .woocommerce-tabs .tabs li {
     border-right: none;
-    border-bottom: 1px solid #00aba9;
+    border-bottom: 1px solid #0d69c5;
   }
 }
 
@@ -2733,26 +2734,26 @@ textarea:focus {
 }
 
 .misfit-single-product .woocommerce-tabs .tabs li a:hover {
-  -webkit-box-shadow: inset 0px 3px 0px 0px #00aba9;
-          box-shadow: inset 0px 3px 0px 0px #00aba9;
+  -webkit-box-shadow: inset 0px 3px 0px 0px #0d69c5;
+          box-shadow: inset 0px 3px 0px 0px #0d69c5;
 }
 
 @media only screen and (max-width: 600px) {
   .misfit-single-product .woocommerce-tabs .tabs li a:hover {
-    -webkit-box-shadow: inset 3px 0px 0px 0px #00aba9;
-            box-shadow: inset 3px 0px 0px 0px #00aba9;
+    -webkit-box-shadow: inset 3px 0px 0px 0px #0d69c5;
+            box-shadow: inset 3px 0px 0px 0px #0d69c5;
   }
 }
 
 .misfit-single-product .woocommerce-tabs .tabs li.active {
-  -webkit-box-shadow: inset 0px 3px 0px 0px #00aba9;
-          box-shadow: inset 0px 3px 0px 0px #00aba9;
+  -webkit-box-shadow: inset 0px 3px 0px 0px #0d69c5;
+          box-shadow: inset 0px 3px 0px 0px #0d69c5;
 }
 
 @media only screen and (max-width: 600px) {
   .misfit-single-product .woocommerce-tabs .tabs li.active {
-    -webkit-box-shadow: inset 3px 0px 0px 0px #00aba9;
-            box-shadow: inset 3px 0px 0px 0px #00aba9;
+    -webkit-box-shadow: inset 3px 0px 0px 0px #0d69c5;
+            box-shadow: inset 3px 0px 0px 0px #0d69c5;
   }
 }
 
@@ -2833,7 +2834,7 @@ form.woocommerce-cart-form table tbody tr .product-name a {
 }
 
 form.woocommerce-cart-form table tbody tr .product-name a:hover {
-  color: #00aba9;
+  color: #0d69c5;
 }
 
 form.woocommerce-cart-form table tbody tr .product-price {
@@ -2842,7 +2843,7 @@ form.woocommerce-cart-form table tbody tr .product-price {
 }
 
 form.woocommerce-cart-form table tbody tr .product-subtotal {
-  color: #00aba9;
+  color: #0d69c5;
   font-weight: 600;
 }
 
@@ -2852,7 +2853,7 @@ form.woocommerce-cart-form table tbody .actions .coupon .button {
 
 .woocommerce-form-coupon-toggle .woocommerce-info {
   padding: 1rem;
-  background: #00c5c2;
+  background: #0f76dd;
   font-size: 0.9rem;
   color: white;
   text-transform: uppercase;
@@ -2913,7 +2914,7 @@ form.checkout .col2-set .col-1 .woocommerce-billing-fields .woocommerce-billing-
 
 .woocommerce-notice {
   padding: 1rem;
-  background: #00c5c2;
+  background: #0f76dd;
   font-size: 0.9rem;
   color: white;
   text-transform: uppercase;
@@ -2947,7 +2948,7 @@ form.checkout .col2-set .col-1 .woocommerce-billing-fields .woocommerce-billing-
 }
 
 .contact-info {
-  border-right: 1px solid #00dedb;
+  border-right: 1px solid #1583f0;
 }
 
 @media only screen and (max-width: 600px) {
@@ -2957,7 +2958,7 @@ form.checkout .col2-set .col-1 .woocommerce-billing-fields .woocommerce-billing-
 }
 
 .contact-info__title {
-  color: #00aba9;
+  color: #0d69c5;
 }
 
 .contact-info__phone, .contact-info__email, .contact-info__address {
@@ -2978,11 +2979,11 @@ form.checkout .col2-set .col-1 .woocommerce-billing-fields .woocommerce-billing-
 }
 
 .contact-info__email:hover {
-  color: #00aba9;
+  color: #0d69c5;
 }
 
 .contact-info__subtitle {
-  color: #00aba9;
+  color: #0d69c5;
   margin-top: 3rem;
   font-weight: 600;
 }
@@ -3005,7 +3006,7 @@ form.checkout .col2-set .col-1 .woocommerce-billing-fields .woocommerce-billing-
 .contact-info__social-links li a {
   display: block;
   background: white;
-  color: #00aba9;
+  color: #0d69c5;
   -webkit-transition: all ease-in-out 200ms;
   transition: all ease-in-out 200ms;
   font-size: 1rem;
@@ -3014,7 +3015,7 @@ form.checkout .col2-set .col-1 .woocommerce-billing-fields .woocommerce-billing-
 }
 
 .contact-info__social-links li a:hover {
-  background: #00aba9;
+  background: #0d69c5;
   color: white;
 }
 
