@@ -397,8 +397,22 @@ textarea {
   line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   clear: both;
+}
+
+.page-subtitle::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 3px;
+  background-color: #0d69c5;
+  margin-right: 5px;
 }
 
 p {
@@ -2932,106 +2946,87 @@ form.checkout .col2-set .col-1 .woocommerce-billing-fields .woocommerce-billing-
   text-decoration: underline;
 }
 
-.contact-wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  grid-gap: 2rem;
-}
-
-@media only screen and (max-width: 600px) {
-  .contact-wrapper {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-}
-
-.contact-info {
-  border-right: 1px solid #1583f0;
-}
-
-@media only screen and (max-width: 600px) {
-  .contact-info {
-    border-right: none;
-  }
-}
-
-.contact-info__title {
-  color: #0d69c5;
-}
-
-.contact-info__phone, .contact-info__email, .contact-info__address {
-  font-size: 0.9rem;
-  display: block;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 0.5rem;
-}
-
-.contact-info__email {
-  display: inline-block;
-  color: #666666;
-  text-decoration: none;
-  font-weight: 600;
-  -webkit-transition: all ease-in-out 200ms;
-  transition: all ease-in-out 200ms;
-}
-
-.contact-info__email:hover {
-  color: #0d69c5;
-}
-
-.contact-info__subtitle {
-  color: #0d69c5;
-  margin-top: 3rem;
-  font-weight: 600;
-}
-
-.contact-info__social-links {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.page-split {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.contact-info__social-links li {
-  width: 2rem;
-  height: 2rem;
-  margin-right: 1rem;
+@media only screen and (max-width: 790px) {
+  .page-split {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
-.contact-info__social-links li a {
-  display: block;
-  background: white;
-  color: #0d69c5;
-  -webkit-transition: all ease-in-out 200ms;
-  transition: all ease-in-out 200ms;
-  font-size: 1rem;
-  text-align: center;
-  line-height: 2rem;
+.page-split__image {
+  padding: 5rem;
+  width: 50%;
 }
 
-.contact-info__social-links li a:hover {
-  background: #0d69c5;
-  color: white;
-}
-
-/* Contact Form */
-.contact-form {
-  width: 80%;
-  margin: 0 auto;
-}
-
-@media only screen and (max-width: 600px) {
-  .contact-form {
+@media only screen and (max-width: 790px) {
+  .page-split__image {
     width: 100%;
   }
 }
 
-.contact-form .wpcf7 .wpcf7-form {
+.page-split__form {
+  padding: 5%;
+  width: 50%;
+}
+
+@media only screen and (max-width: 790px) {
+  .page-split__form {
+    width: 100%;
+  }
+}
+
+.contact-page__social-buttons {
+  width: 30%;
+  margin: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media only screen and (max-width: 790px) {
+  .contact-page__social-buttons {
+    width: 50%;
+  }
+}
+
+.contact-page__social-buttons .contact__social__link {
+  display: block;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #999999;
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+}
+
+.contact-page__social-buttons .contact__social__link:hover {
+  color: #0d69c5;
+}
+
+.contact-page__form {
+  width: 70%;
+  margin: 4rem 0;
+}
+
+@media only screen and (max-width: 790px) {
+  .contact-page__form {
+    width: 100%;
+  }
+}
+
+/* Contact Form */
+.wpcf7-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3041,7 +3036,7 @@ form.checkout .col2-set .col-1 .woocommerce-billing-fields .woocommerce-billing-
           flex-direction: column;
 }
 
-.contact-form .wpcf7 .wpcf7-form label {
+.wpcf7-form label {
   margin-bottom: 1rem;
   display: -ms-grid;
   display: grid;
@@ -3049,7 +3044,7 @@ form.checkout .col2-set .col-1 .woocommerce-billing-fields .woocommerce-billing-
   font-size: 0.8rem;
 }
 
-.contact-form .wpcf7 .wpcf7-form label span input {
+.wpcf7-form label span input {
   width: 100%;
 }
 

@@ -1,3 +1,19 @@
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	clear: both;
+}
+
+.page-subtitle {
+	&::before {
+		content: "";
+		display: inline-block;
+		width: 15px;
+		height: 3px;
+		background-color: $color__accent;
+		margin-right: 5px;
+	}
 }
