@@ -2491,8 +2491,6 @@ textarea:focus {
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  right: 10px;
-  top: 10px;
   z-index: 10;
 }
 
@@ -2526,6 +2524,7 @@ textarea:focus {
 
 .misfit-single-product .woocommerce-product-gallery .woocommerce-product-gallery__wrapper {
   width: 100%;
+  margin-top: 0;
 }
 
 @media only screen and (max-width: 600px) {
@@ -2712,6 +2711,7 @@ textarea:focus {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
+  margin: 2rem 0;
 }
 
 @media only screen and (max-width: 600px) {
@@ -2726,21 +2726,6 @@ textarea:focus {
   }
 }
 
-.misfit-single-product .woocommerce-tabs .tabs li {
-  border-right: 1px solid #0d69c5;
-}
-
-@media only screen and (max-width: 600px) {
-  .misfit-single-product .woocommerce-tabs .tabs li {
-    border-right: none;
-    border-bottom: 1px solid #0d69c5;
-  }
-}
-
-.misfit-single-product .woocommerce-tabs .tabs li:last-child {
-  border-right: none;
-}
-
 .misfit-single-product .woocommerce-tabs .tabs li a {
   text-align: center;
   color: #666666;
@@ -2752,8 +2737,8 @@ textarea:focus {
 }
 
 .misfit-single-product .woocommerce-tabs .tabs li a:hover {
-  -webkit-box-shadow: inset 0px 3px 0px 0px #0d69c5;
-          box-shadow: inset 0px 3px 0px 0px #0d69c5;
+  background-color: #0d69c5;
+  color: white;
 }
 
 @media only screen and (max-width: 600px) {
@@ -2764,8 +2749,7 @@ textarea:focus {
 }
 
 .misfit-single-product .woocommerce-tabs .tabs li.active {
-  -webkit-box-shadow: inset 0px 3px 0px 0px #0d69c5;
-          box-shadow: inset 0px 3px 0px 0px #0d69c5;
+  background-color: #0d69c5;
 }
 
 @media only screen and (max-width: 600px) {
@@ -2773,6 +2757,10 @@ textarea:focus {
     -webkit-box-shadow: inset 3px 0px 0px 0px #0d69c5;
             box-shadow: inset 3px 0px 0px 0px #0d69c5;
   }
+}
+
+.misfit-single-product .woocommerce-tabs .tabs li.active a {
+  color: white;
 }
 
 .misfit-single-product .related {

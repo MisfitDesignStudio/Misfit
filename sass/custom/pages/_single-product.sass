@@ -15,8 +15,8 @@
     text-transform: uppercase
     text-decoration: none
     text-align: center
-    right: 10px
-    top: 10px
+    // right: 10px
+    // top: 10px
     z-index: 10
     @include tablet-s
       width: 100%
@@ -36,6 +36,7 @@
         right: 15px
     .woocommerce-product-gallery__wrapper
       width: 100%
+      margin-top: 0
       @include tablet-s
         margin-top: 2rem
       .woocommerce-product-gallery__image
@@ -147,16 +148,11 @@
     .tabs
       display: grid
       grid-template-columns: repeat(3, 1fr)
+      margin: 2rem 0
       @include tablet-s
         display: flex
         flex-direction: column
       li
-        border-right: 1px solid $color__accent
-        @include tablet-s
-         border-right: none
-         border-bottom: 1px solid $color__accent
-        &:last-child
-          border-right: none
         a
           text-align: center
           color: $color__text
@@ -165,13 +161,16 @@
           font-size: 0.8rem
           transition: all ease-in-out 200ms
           &:hover
-            box-shadow: inset 0px 3px 0px 0px $color__accent
+            background-color: $color__accent
+            color: white
             @include tablet-s
               box-shadow: inset 3px 0px 0px 0px $color__accent
         &.active
-          box-shadow: inset 0px 3px 0px 0px $color__accent
+          background-color: $color__accent
           @include tablet-s
             box-shadow: inset 3px 0px 0px 0px $color__accent
+          a
+            color: white
 
   .related
     grid-column: span 2

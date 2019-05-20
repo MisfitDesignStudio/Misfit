@@ -258,6 +258,9 @@ remove_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_lo
 // Remove add to cart
 remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10);
 
+// Remove meta from single product page (category)
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
+
 
 
 function is_portfolio()
