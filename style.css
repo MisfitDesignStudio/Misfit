@@ -1383,7 +1383,7 @@ button--add-to-cart {
   display: grid;
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-column-gap: 1rem;
+  grid-column-gap: 2rem;
   grid-row-gap: 2rem;
 }
 
@@ -1634,6 +1634,8 @@ button--add-to-cart {
 /* Shop card */
 .shop-grid-item {
   display: block;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 }
 
 .shop-item-card {
@@ -1645,6 +1647,7 @@ button--add-to-cart {
 .shop-item-card__image {
   width: 100%;
   position: relative;
+  height: 300px;
 }
 
 .shop-item-card__image img {
@@ -1680,6 +1683,7 @@ button--add-to-cart {
   font-size: 0.9rem;
   font-weight: 400;
   margin: 0;
+  padding-bottom: 1rem;
 }
 
 .portfolio-grid-item {
