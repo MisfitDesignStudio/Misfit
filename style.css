@@ -2611,6 +2611,10 @@ textarea:focus {
      object-position: center;
 }
 
+.misfit-single-product .summary {
+  margin-top: 0;
+}
+
 .misfit-single-product .summary .price {
   color: #0d69c5;
   font-size: 1.2rem;
@@ -2636,6 +2640,42 @@ textarea:focus {
 
 .misfit-single-product .summary .cart div input {
   height: 100%;
+}
+
+.misfit-single-product .summary .cart.grouped_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.misfit-single-product .summary .cart.grouped_form .woocommerce-grouped-product-list-item__quantity {
+  padding: 1rem 0;
+}
+
+.misfit-single-product .summary .cart.grouped_form .woocommerce-grouped-product-list-item__label {
+  padding: 1rem 0;
+}
+
+.misfit-single-product .summary .cart.grouped_form .woocommerce-grouped-product-list-item__label a {
+  color: #313131;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.misfit-single-product .summary .cart.grouped_form .woocommerce-grouped-product-list-item__label a:hover {
+  color: #0d69c5;
+}
+
+.misfit-single-product .summary .cart.grouped_form .woocommerce-grouped-product-list-item__price {
+  padding: 1rem 0;
+}
+
+.misfit-single-product .summary .cart.grouped_form .woocommerce-grouped-product-list-item__price span {
+  text-align: right;
 }
 
 .misfit-single-product .summary .product_meta .sku_wrapper {

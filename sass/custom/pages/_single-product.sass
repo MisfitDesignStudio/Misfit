@@ -86,6 +86,7 @@
 
 
   .summary
+    margin-top: 0
     .price
       color: $color__accent
       font-size: 1.2rem
@@ -96,12 +97,34 @@
         font-size: 1rem
       ins
         background: none
+
+    //CART
+    //Single item in cart
     .cart
       display: flex
       margin-bottom: 1rem
       div
         input
           height: 100%
+    //Multiple items in cart
+    .cart.grouped_form
+      display: flex
+      flex-direction: column
+      .woocommerce-grouped-product-list-item__quantity
+        padding: 1rem 0
+      .woocommerce-grouped-product-list-item__label
+        padding: 1rem 0
+        a
+          color: $color__text--dark
+          text-decoration: none
+          font-weight: bold
+          &:hover
+            color: $color__accent
+      .woocommerce-grouped-product-list-item__price
+        padding: 1rem 0
+        span
+          text-align: right
+
     .product_meta
       .sku_wrapper
         display: none
