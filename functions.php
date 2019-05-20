@@ -202,61 +202,64 @@ if (class_exists('WooCommerce')) {
  * Woocommerce hooks customization
  */
 
-// Open image wrapper
-add_action('woocommerce_before_shop_loop_item', 'misfit_shop_item_image_wrapper_open', 15);
+// // Open image wrapper
+// add_action('woocommerce_before_shop_loop_item', 'misfit_shop_item_image_wrapper_open', 15);
 
-function misfit_shop_item_image_wrapper_open()
-{
-	echo '<div class="shop-item-card__image">';
-}
+// function misfit_shop_item_image_wrapper_open()
+// {
+// 	echo '<div class="shop-item-card__image">';
+// }
 
-// Close image wrapper
-add_action('woocommerce_before_shop_loop_item_title', 'misfit_shop_item_image_wrapper_close', 15);
+// // Close image wrapper
+// add_action('woocommerce_before_shop_loop_item_title', 'misfit_shop_item_image_wrapper_close', 15);
 
-function misfit_shop_item_image_wrapper_close()
-{
-	echo '</div>';
-}
+// function misfit_shop_item_image_wrapper_close()
+// {
+// 	echo '</div>';
+// }
 
-//Product title
-add_action('woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_title', 17);
-
-
+// //Product title
+// add_action('woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_title', 17);
 
 
-// Open shop card overlay wrapper
-add_action('woocommerce_before_shop_loop_item_title', 'misfit_shop_item_overlay_wrapper_open', 20);
-function misfit_shop_item_overlay_wrapper_open()
-{
-	echo '<div class="shop-item-card__content">';
-}
-
-// Close shop card overlay wrapper
-add_action('woocommerce_after_shop_loop_item', 'misfit_shop_item_overlay_wrapper_close', 5);
-
-function misfit_shop_item_overlay_wrapper_close()
-{
-	echo '</div>';
-}
 
 
-// Move closing of the link after closing of the image wrapper
-//First remove default position
-remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_product_link_close', 5);
-//Now call it after image wrapper close
-add_action('woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_link_close', 16);
+// // Open shop card overlay wrapper
+// add_action('woocommerce_before_shop_loop_item_title', 'misfit_shop_item_overlay_wrapper_open', 20);
+// function misfit_shop_item_overlay_wrapper_open()
+// {
+// 	echo '<div class="shop-item-card__content">';
+// }
 
-//Remove default title position
-remove_action('woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_title', 20);
+// // Close shop card overlay wrapper
+// add_action('woocommerce_after_shop_loop_item', 'misfit_shop_item_overlay_wrapper_close', 5);
 
-//Remove results count
-remove_action('woocommerce_before_shop_loop', 'woocommerce_result_count', 20);
-//Remove catalog ordering
-remove_action('woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30);
+// function misfit_shop_item_overlay_wrapper_close()
+// {
+// 	echo '</div>';
+// }
+
+
+// // Move closing of the link after closing of the image wrapper
+// //First remove default position
+// remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_product_link_close', 5);
+// //Now call it after image wrapper close
+// add_action('woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_link_close', 16);
+
+// //Remove default title position
+// remove_action('woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_title', 20);
+
+// //Remove results count
+// remove_action('woocommerce_before_shop_loop', 'woocommerce_result_count', 20);
+
+// //Remove catalog ordering
+// remove_action('woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30);
+
 //Remove rating stars
 remove_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 5);
-// Remove add to cart
-remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10);
+
+// // Remove add to cart
+// remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10);
 
 
 
