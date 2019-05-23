@@ -10,7 +10,7 @@
 
 get_header();
 ?>
-<div class="container container--wide v-padding">
+<div class="container v-padding">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
@@ -22,19 +22,19 @@ get_header();
 
 				<!-- Custom Query -->
 				<?php
-					// query arguments 
-					$args = array(
-						'post_type' => 'project',
-						'post_status' => 'publish',
-						'posts_per_page' => -1,
-						'orderby' => 'rand'
-					);
+				// query arguments 
+				$args = array(
+					'post_type' => 'project',
+					'post_status' => 'publish',
+					'posts_per_page' => -1,
+					'orderby' => 'rand'
+				);
 
-					// the query
-					$portfolioPosts = new WP_Query( $args );
-					
-					// custom loop
-					while($portfolioPosts -> have_posts()) : $portfolioPosts -> the_post();
+				// the query
+				$portfolioPosts = new WP_Query($args);
+
+				// custom loop
+				while ($portfolioPosts->have_posts()) : $portfolioPosts->the_post();
 					?>
 
 					<article class="project-card">
@@ -56,11 +56,11 @@ get_header();
 
 					</article>
 
-				<?php 
-        //restore original post data
-        wp_reset_postdata();
+					<?php
+					//restore original post data
+					wp_reset_postdata();
 
-        endwhile;  ?>
+				endwhile;  ?>
 			</div> <!-- end portfolio grid-->
 
 

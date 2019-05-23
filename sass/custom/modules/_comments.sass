@@ -73,3 +73,25 @@
     input
       width: auto
       margin-right: 1rem
+  .submit
+    display: inline-block
+    margin: 0
+    text-transform: uppercase
+    font-weight: 600
+    letter-spacing: 1px
+    transition: all ease-in-out 200ms
+    border: 2px solid
+    text-decoration: none
+    text-align: center
+    cursor: pointer
+    font-size: 0.6rem
+    padding: 1.4em 2em 1.2em
+    background: $color__accent
+    border-color: $color__accent
+    color: white
+    &:hover
+      background: white
+      color: $color__accent
+    @include tablet-m
+      padding: 1em 1.6em
+    

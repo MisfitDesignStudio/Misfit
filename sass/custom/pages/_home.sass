@@ -1,0 +1,70 @@
+.home__hero
+  min-height: 100vh
+
+  &__grid
+    width: 100%
+    padding: 0 10%
+    display: grid
+    grid-gap: 4rem
+    grid-template-columns: 1fr 3fr
+    @include tablet-m
+      grid-template-columns: 1fr
+
+  &__image
+    @include tablet-m
+      width: 50%
+      margin: 1rem auto
+    img
+      display: block
+      margin: 0
+      padding: 0
+
+  &__content
+    min-height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-content: center
+
+  &__title
+    font-size: 10vw
+    font-weight: 900
+    margin: 0
+    margin-bottom: 1rem
+    padding: 0
+    line-height: 7rem
+    @include tablet-m
+      font-size: 20vw
+      line-height: 3rem
+      margin-top: -4rem
+  &__tagline
+    font-size: 2vw
+    font-weight: 400
+    margin: 0
+    padding: 0
+    @include tablet-m
+      font-size: 5vw
+    &::before
+      content: ''
+      width: 250px
+      margin: 2rem 0
+      height: 5px
+      background: $color__accent
+      display: block
+
+  &__cta
+    margin-top: 2rem
+    .btn:first-child
+      margin-right: 1rem
+      @include mobile-l
+        margin-right: 0
+        margin-bottom: 2rem
+
+
+//Home shop section
+
+.home-shop-grid
+  display: grid
+  width: 100%
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+  grid-gap: 2rem
