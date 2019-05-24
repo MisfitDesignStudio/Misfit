@@ -3106,6 +3106,7 @@ form.checkout .col2-set .col-1 .woocommerce-billing-fields .woocommerce-billing-
   margin-bottom: 1rem;
   padding: 0;
   line-height: 7rem;
+  margin-left: -8px;
 }
 
 @media only screen and (max-width: 790px) {
@@ -3121,6 +3122,7 @@ form.checkout .col2-set .col-1 .woocommerce-billing-fields .woocommerce-billing-
   font-weight: 400;
   margin: 0;
   padding: 0;
+  margin-left: -2px;
 }
 
 @media only screen and (max-width: 790px) {
@@ -3136,6 +3138,7 @@ form.checkout .col2-set .col-1 .woocommerce-billing-fields .woocommerce-billing-
   height: 5px;
   background: #0d69c5;
   display: block;
+  margin-left: 2px;
 }
 
 .home__hero__cta {

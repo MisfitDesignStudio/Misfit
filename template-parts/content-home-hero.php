@@ -6,7 +6,7 @@
     </div>
 
     <div class="home__hero__content">
-      <h1 class="home__hero__title">Hello</h1>
+      <h1 class="home__hero__title">Hello!</h1>
       <h2 class="home__hero__tagline">My name is Mario,<br>I'm a designer you've been looking for.</h2>
       <div class="home__hero__cta">
         <a href="<?php echo get_home_url(); ?>/contact" class="btn btn--primary btn--medium">Let's work together</a>
