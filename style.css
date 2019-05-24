@@ -2135,6 +2135,10 @@ textarea:focus {
   margin: 2rem 0;
 }
 
+.project-page .content-wrapper img {
+  max-width: 100%;
+}
+
 .project-page__title {
   padding-left: 1rem;
   border-left: 3px solid #0d69c5;
