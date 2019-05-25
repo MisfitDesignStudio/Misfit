@@ -48,7 +48,7 @@ get_header();
 							<h1 class="project__title"><?php the_title(); ?></h1>
 
 							<div class="project__content">
-								<p class="project__excerpt">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+								<!-- <p class="project__excerpt">Lorem ipsum dolor sit, amet consectetur adipisicing.</p> -->
 								<object><a href="<?php the_permalink(); ?>" class="btn btn--small btn--secondary--white">View Project</a></object>
 							</div>
 

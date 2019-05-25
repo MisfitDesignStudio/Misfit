@@ -1452,6 +1452,7 @@ button--add-to-cart {
   top: 40px;
   -webkit-transition: all ease-in-out 300ms;
   transition: all ease-in-out 300ms;
+  background-color: rgba(49, 49, 49, 0);
 }
 
 .project:hover .project__title::after {
@@ -1502,6 +1503,8 @@ button--add-to-cart {
 .project__title {
   font-size: 0.9rem;
   letter-spacing: 2px;
+  background-color: rgba(49, 49, 49, 0.4);
+  padding: 0.8rem;
   color: white;
   text-transform: uppercase;
   position: absolute;
@@ -1632,6 +1635,7 @@ button--add-to-cart {
   top: 40px;
   -webkit-transition: all ease-in-out 300ms;
   transition: all ease-in-out 300ms;
+  background-color: rgba(49, 49, 49, 0);
 }
 
 .project:hover .project__title::after {
@@ -1682,6 +1686,8 @@ button--add-to-cart {
 .project__title {
   font-size: 0.9rem;
   letter-spacing: 2px;
+  background-color: rgba(49, 49, 49, 0.4);
+  padding: 0.8rem;
   color: white;
   text-transform: uppercase;
   position: absolute;

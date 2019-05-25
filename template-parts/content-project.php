@@ -33,8 +33,11 @@
           <div class="project-image">
             <img src="<?php echo $projectImage['url']; ?>" alt="<?php echo $projectImage['alt']; ?>">
           </div>
-
-          <p class="project-image-caption"><?php echo $projectImageCaption; ?></p>
+          <?php
+          if ($projectImageCaption) : ?>
+            <p class="project-image-caption"><?php echo $projectImageCaption; ?></p>
+          <?php endif;
+        ?>
 
         </div>
         <!--End single image wrapper-->
