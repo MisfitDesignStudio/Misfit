@@ -20,7 +20,7 @@ get_header();
 	<?php get_template_part('template-parts/content', 'home-projects'); ?>
 
 	<!-- =============================== -->
-	<?php get_template_part('template-parts/content', 'home-blogposts'); ?>
+	<!-- <?php get_template_part('template-parts/content', 'home-blogposts'); ?> -->
 
 	<!-- =============================== -->
 	<?php get_template_part('template-parts/content', 'home-woo'); ?>

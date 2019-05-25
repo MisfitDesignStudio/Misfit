@@ -35,10 +35,10 @@ if ($portfolioPosts->have_posts()) :
                 <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
               </div>
 
-              <h1 class="project__title"><?php the_title(); ?></h1>
+              <h1 class="project__title"><?php the_field('client_name'); ?></h1>
 
               <div class="project__content">
-                <p class="project__excerpt">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                <p class="project__excerpt"></p>
                 <object><a href="<?php the_permalink(); ?>" class="btn btn--small btn--secondary--white">View Project</a></object>
               </div>
 
