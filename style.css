@@ -2137,6 +2137,10 @@ textarea:focus {
   margin-bottom: 0.5rem;
 }
 
+.site-content {
+  min-height: 80vh;
+}
+
 .project-page {
   margin: 2rem 0;
 }
