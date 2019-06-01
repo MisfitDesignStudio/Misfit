@@ -25,9 +25,7 @@ get_header();
 				// query arguments 
 				$args = array(
 					'post_type' => 'project',
-					'post_status' => 'publish',
-					'posts_per_page' => -1,
-					'orderby' => 'rand'
+					'post_status' => 'publish'
 				);
 
 				// the query
@@ -45,7 +43,7 @@ get_header();
 								<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
 							</div>
 
-							<h1 class="project__title"><?php the_title(); ?></h1>
+							<h1 class="project__title"><?php the_field('client_name'); ?></h1>
 
 							<div class="project__content">
 								<!-- <p class="project__excerpt">Lorem ipsum dolor sit, amet consectetur adipisicing.</p> -->
@@ -62,11 +60,12 @@ get_header();
 
 				endwhile;  ?>
 			</div> <!-- end portfolio grid-->
-
-
-
+			<?php the_posts_navigation(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 </div>
+
+<!-- =============================== -->
+<?php get_template_part('template-parts/content', 'newsletter'); ?>
 <?php get_footer();
