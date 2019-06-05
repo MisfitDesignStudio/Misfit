@@ -1,11 +1,19 @@
 <?php
+if(wp_is_mobile()) :
 // query arguments 
 $args = array(
   'post_type' => 'project',
   'post_status' => 'publish',
-  'posts_per_page' => 3,
-  // 'orderby' => 'rand'
+  'posts_per_page' => 2
 );
+else:
+// query arguments 
+$args = array(
+  'post_type' => 'project',
+  'post_status' => 'publish',
+  'posts_per_page' => 3
+);
+endif;
 
 // the query
 $portfolioPosts = new WP_Query($args);
