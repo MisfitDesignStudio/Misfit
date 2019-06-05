@@ -1305,6 +1305,15 @@ button--add-to-cart {
   grid-row-gap: 2rem;
 }
 
+/* Testimonials Grid */
+.grid-testimonials {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 4rem;
+}
+
 /* Cards */
 /* Blog card */
 .blog-post-card {
@@ -1611,6 +1620,40 @@ button--add-to-cart {
   font-weight: 400;
   margin: 0;
   padding-bottom: 1rem;
+}
+
+/* Testimonial card */
+.testimonial-card {
+  position: relative;
+  background-color: #f6f6f6;
+  padding: 2rem;
+}
+
+.testimonial-quote-sign {
+  position: absolute;
+  font-size: 120px;
+  color: #0d69c5;
+  opacity: 0.08;
+  z-index: 0;
+}
+
+.testimonial-text {
+  position: relative;
+  z-index: 2;
+  text-align: right;
+  font-style: italic;
+}
+
+.testimonial-client {
+  text-align: right;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.testimonial-client::before {
+  content: '-';
+  display: inline-block;
+  margin-right: 0.5rem;
 }
 
 .portfolio-grid-item {
@@ -3173,4 +3216,9 @@ form.checkout .col2-set .col-1 .woocommerce-billing-fields .woocommerce-billing-
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 2rem;
+}
+
+.section-home--testimonials {
+  background-color: #eeeeee;
+  padding: 1rem 0;
 }

@@ -1,0 +1,26 @@
+.testimonial-card
+	position: relative
+	background-color: lighten($color__background--light, 3)
+	padding: 2rem
+
+.testimonial-quote-sign
+	position: absolute
+	font-size: 120px
+	color: $color__accent
+	opacity: 0.08
+	z-index: 0
+
+.testimonial-text
+	position: relative
+	z-index: 2
+	text-align: right
+	font-style: italic
+
+.testimonial-client
+	text-align: right
+	font-size: 1rem
+	font-style: italic
+	&::before
+		content: '-'
+		display: inline-block
+		margin-right: 0.5rem
