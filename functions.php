@@ -47,6 +47,9 @@ if (!function_exists('misfitdesign_setup')) :
 		register_nav_menus(array(
 			'Main Menu' => esc_html__('Primary', 'misfitdesign'),
 		));
+		register_nav_menus(array(
+			'Footer Menu' => esc_html__('Secondary', 'misfitdesign'),
+		));
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments

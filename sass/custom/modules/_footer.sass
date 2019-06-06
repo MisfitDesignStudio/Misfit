@@ -5,3 +5,50 @@
   font-size: 0.8rem
   text-align: center
   margin-bottom: 0
+
+.footer
+  background-color: $color__background--dark
+
+  &-content
+    display: grid
+    grid-template-columns: 1fr 2fr 2fr
+    color: white
+    grid-gap: 2rem
+    @include tablet-l
+      grid-template-columns: 1fr
+    p
+      font-size: 0.8rem
+    h2
+      font-size: 1rem
+      font-weight: normal
+      border-bottom: 1px solid $color__text
+      padding-bottom: 1rem
+      margin-bottom: 1.5rem
+      &::before
+        content: ''
+        display: inline-block
+        width: 7px
+        height: 3px
+        margin-right: 5px
+        background-color: $color__accent
+
+  &-nav-links
+    list-style: none
+    margin: 0
+    padding: 0
+    columns: 2
+    li
+    a
+      color: $color__text
+      font-size: 0.8rem
+      text-decoration: none
+      &:hover
+        text-decoration: underline
+
+  &-newsletter
+    display: flex
+    width: 100%
+
+  &-input
+    flex: 1
+

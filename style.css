@@ -1112,6 +1112,78 @@ object {
   margin-bottom: 0;
 }
 
+.footer {
+  background-color: #313131;
+}
+
+.footer-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 2fr;
+      grid-template-columns: 1fr 2fr 2fr;
+  color: white;
+  grid-gap: 2rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .footer-content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.footer-content p {
+  font-size: 0.8rem;
+}
+
+.footer-content h2 {
+  font-size: 1rem;
+  font-weight: normal;
+  border-bottom: 1px solid #666666;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-content h2::before {
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 3px;
+  margin-right: 5px;
+  background-color: #0d69c5;
+}
+
+.footer-nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-columns: 2;
+          columns: 2;
+}
+
+.footer-nav-links a {
+  color: #666666;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.footer-nav-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-newsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.footer-input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
 /* Buttons */
 .btn,
 button {

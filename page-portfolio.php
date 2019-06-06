@@ -61,6 +61,9 @@ get_header();
 				endwhile;  ?>
 			</div> <!-- end portfolio grid-->
 			<?php the_posts_navigation(); ?>
+
+			<!-- ===================================== -->
+			<?php get_template_part('template-parts/content', 'testimonials'); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
