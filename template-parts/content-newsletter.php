@@ -5,7 +5,7 @@
         <div id="mc_embed_signup_scroll" class="newsletter__inner">
 
           <div class="newsletter__content">
-            <h4 class="newsletter__content--title">Subscribe to our mailing list<span>for design and business tips and special offers</span></h4>
+            <h4 class="newsletter__content--title">Subscribe to the mailing list<span>for design and business tips and special offers</span></h4>
           </div>
 
           <div class="mc-field-group newsletter__fields">

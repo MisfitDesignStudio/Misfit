@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying the footer
  *
@@ -39,9 +40,9 @@
 			</div>
 
 			<div class="footer-content__newsletter">
-				<h2>Newletter</h2>
+				<h2>Newsletter</h2>
 				<p>
-					Subscribe to our newsletter for occasional tips & tricks, special offers, announcements and more!
+					Subscribe to newsletter for occasional tips & tricks, special offers, announcements and more!
 				</p>
 				<!-- Begin Mailchimp Signup Form -->
 				<div id="mc_embed_signup">
